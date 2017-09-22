@@ -1,0 +1,32 @@
+.btn-signin {
+  @include padding(8px, 20px, 8px, 20px);
+  margin-left: 15px;
+}
+
+.btn-signup {
+  @include padding(8px, 27px, 8px, 27px);
+  margin-left: 12px;
+}
+/* Readjusted Bootstrap Buttons styles */
+
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  &:hover {
+    background-color: lighten($primary-color, 10%);
+    border-color: lighten($primary-color, 10%);
+  }
+  &:focus {
+    box-shadow: inset 0 -3px 0 rgb(92,107,192);
+  }
+}
+
+.btn-warning {
+  &:hover {
+    background-color: lighten($warning-color, 10%);
+    border-color: lighten($warning-color, 10%);
+  }
+  &:focus {
+    box-shadow: inset 0 -3px 0 rgb(254,193,7);
+  }
+}

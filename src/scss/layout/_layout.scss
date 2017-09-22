@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,500,700&subset=cyrillic');
+@import "buttons",
+        "forms";
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  color: $primary-text-color;
+  font-size: 16px;
+}
+
+@for $i from 1 through 3 {
+  h#{$i} {
+    font-size: 3.5rem - ($i - 1);
+    font-weight: bold;
+  }
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.banner {
+  min-height: 80px;
+}
+
+.logo {
+  &-prozorro {
+    margin-left: 37px;
+  }
+}
+
+.accredit {
+  display: inline-block;
+  margin-left: 9px;
+  margin-bottom: .2rem;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.contact-info {
+  display: inline-block;
+  @include padding(0, 15px, 0, 15px);
+  line-height: 1.3;
+  vertical-align: middle;
+  a[href^="tel:"] {
+    color: $primary-text-color;
+    text-decoration: none;
+  }
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(25,31,64,.7);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+}
+
+.jumbotron {
+  &-content {
+    position: relative;
+    color: $reverse-text-color;
+  }
+  &-title {
+    margin-bottom: 40px;
+  }
+  &-subtitle {
+    font-size: 26px;
+  }
+  &-factoid {
+    @include padding(18px, 15px, 18px, 26px);
+    border-left: 2px solid $primary-color;
+    a {
+      color: $reverse-text-color;
+      border-bottom: 1px solid rgba(255,255,255,.5);
+      &:hover {
+        color: $reverse-text-color;
+        border-bottom: 1px solid rgba(255,255,255,1);
+        text-decoration: none;
+      }
+    }
+  }
+}
+/* ---------------------------------------
+    Readjusted Bootstrap Navs Styles
+   --------------------------------------- */
+
+.bg-primary {
+  background-color: $primary-color !important;
+}
+
+.navbar-dark {
+  @include padding(0, 0, 0, 0);
+  .navbar-nav {
+    .nav {
+      // &-item {
+      //   &:first-child {
+      //     a {
+      //       padding-left: 0;
+      //     }
+      //   }
+      // }
+      &-link {
+        @include padding(13.5px, 1.7vw, 13.5px, 1.7vw);
+        color: $reverse-text-color;
+        transition: background-color .2s;
+        &:hover {
+          background-color: lighten($primary-color, 10%);
+          color: $reverse-text-color;
+        }
+      }
+    }
+  }
+  .social {
+    .nav {
+      &-item {
+
+      }
+      &-link {
+        @include padding(13.5px, 15px, 13.5px, 15px);
+      }
+    }
+  }
+}
+
+/* --------------------------------
+  Readjusted Bootstrap Link Styles
+---------------------------------- */
+a {
+  color: $primary-link-color;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+/* --------------------------------
+Readjusted Bootstrap Jumbotron Styles
+---------------------------------- */
+
+.jumbotron {
+  position: relative;
+  background: url('../images/img-main-screen.jpg');
+  min-height: 512px;
+}
