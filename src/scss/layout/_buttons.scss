@@ -9,24 +9,41 @@
 }
 /* Readjusted Bootstrap Buttons styles */
 
-.btn-primary {
-  background-color: $primary-color;
-  border-color: $primary-color;
-  &:hover {
-    background-color: lighten($primary-color, 10%);
-    border-color: lighten($primary-color, 10%);
+.btn {
+  &-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    &:hover {
+      background-color: lighten($primary-color, 10%);
+      border-color: lighten($primary-color, 10%);
+    }
+    &:focus {
+      box-shadow: inset 0 -3px 0 rgb(92,107,192);
+    }
   }
-  &:focus {
-    box-shadow: inset 0 -3px 0 rgb(92,107,192);
+  &-warning {
+    &:hover {
+      background-color: lighten($warning-color, 10%);
+      border-color: lighten($warning-color, 10%);
+    }
+    &:focus {
+      box-shadow: inset 0 -3px 0 rgb(254,193,7);
+    }
   }
-}
-
-.btn-warning {
-  &:hover {
-    background-color: lighten($warning-color, 10%);
-    border-color: lighten($warning-color, 10%);
-  }
-  &:focus {
-    box-shadow: inset 0 -3px 0 rgb(254,193,7);
+  &-secondary {
+    background-color: transparent;
+    border: 0;
+    color: $primary-link-color;
+    border-bottom: 1px dashed transparent;
+    cursor: pointer;
+    &:hover, &:active {
+      background-color: transparent;
+      border-bottom: 1px dashed;
+      color: $primary-link-color;
+    }
+    &:focus {
+      box-shadow: none;
+      outline: 0;
+    }
   }
 }

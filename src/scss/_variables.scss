@@ -1,7 +1,10 @@
 $primary-color: #5c6bc0;
 $warning-color: #ffc107;
 $secondary-color: #f0f1f2;
+$reverse-color: #fff;
 $primary-text-color: #222222;
-$reverse-text-color: #fff;
+$reverse-text-color: $reverse-color;
 $secondary-text-color: $secondary-color;
 $primary-link-color: #4470b2;
+$border-color-light: #dcdde0;
+$border-color-dark: #c6cacc;
