@@ -6,3 +6,7 @@
     left: $paddingLeft;
   };
 }
+
+@mixin subtitle-secondary {
+  color: $secondary-text-color;
+}

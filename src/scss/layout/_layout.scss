@@ -88,6 +88,7 @@ h4 {
 }
 
 .publications {
+  margin-bottom: 90px;
   &-search {
     position: relative;
     background-color: $secondary-color;
@@ -97,18 +98,16 @@ h4 {
   }
   &-item {
     background-color: $reverse-color;
-    @include padding(35px, 20px, 45px, 40px);
+    @include padding(35px, 40px, 45px, 40px);
     border: 1px solid $border-color-light ;
   }
   &-lot {
-    font-size: 14px;
-    color: $border-color-dark;
+
   }
   &-title {
     margin-bottom: 20px;
   }
   &-org {
-    font-size: 14px;
     margin-bottom: 10px;
   }
   &-type {
@@ -119,9 +118,8 @@ h4 {
         background-image: url('../images/#{$type}-icon.png');
         background-repeat: no-repeat;
         background-position: 20px 50%;
-        font-size: 14px;
         border-left: 1px solid $border-color-dark;
-        color: $border-color-dark;
+        @include subtitle-secondary;
         p {
           padding-left: 60px;
           line-height: 3.5;
@@ -130,8 +128,71 @@ h4 {
     }
   }
   &-status {
+
+  }
+  &-left {
+    &-time {
+      font-size: 18px;
+    }
+  }
+  &-starting {
+    &-price {
+      &-value {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.subtitle {
+  &-secondary {
+    color: $secondary-text-color;
+    font-weight: normal;
+  }
+}
+
+.how-it-works {
+  margin-bottom: 100px;
+  &-title {
+    margin-bottom: 54px;
+  }
+  &-list {
+    font-size: 18px;
+    &-item {
+      margin-bottom: 20px;
+    }
+    &-title {
+      color: $primary-text-color;
+    }
+    &-description {
+      padding-left: 46px;
+      padding-right: 50px;
+      font-weight: normal;
+      font-size: 16px;
+      &:before {
+        position: absolute;
+        content:"\2014";
+        font-size: 36px;
+        line-height: .5;
+        color: $primary-color;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
+.register {
+  &-block {
+    background-color: $secondary-color;
+    display: inline-block;
+    width: 100%;
+    @include padding(7px, 73px !important, 70px, 73px !important);
+    h3 {
+      margin-top: 45px;
+    }
     p {
-      color: $border-color-dark;
+      font-size: 14px;
     }
   }
 }

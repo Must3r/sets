@@ -1,1 +1,5 @@
-console.log("Hello, World!");
+// console.log("Hello, World!");
+$('.popover-trigger').webuiPopover({
+  placement: 'bottom',
+  animation: 'pop'
+});

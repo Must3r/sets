@@ -40,7 +40,7 @@
             </span>
           <span class="contact-info text-left">
               <a href="tel:+380988883298">098-888-32-98</a><br>
-              <a href="mailto:info@sets.org.ua">info@sets.org.ua</a>
+              <a class="link-primary" href="mailto:info@sets.org.ua">info@sets.org.ua</a>
             </span>
           <a href="#" class="btn btn-primary btn-signin">Вхід</a>
           <a href="#" class="btn btn-warning btn-signup">Реєстрація</a>
@@ -121,10 +121,10 @@
               </button>
             </span>
           </div>
-          <input class="link-secondary p-0" data-toggle="collapse" data-target="#collapseExample" type="button" value="Розширений пошук">
+          <input class="link-secondary p-0" data-toggle="collapse" data-target="#expandedSearch" type="button" value="Розширений пошук">
           <img src="images/icon-plus.png" alt="">
         </form>
-        <div class="collapse" id="collapseExample">
+        <div class="collapse" id="expandedSearch">
           <div class="card card-block">
             Gentrify raclette irony butcher migas schlitz waistcoat keytar you probably haven't heard of them marfa chia wayfarers synth locavore thundercats. Quinoa intelligentsia twee kogi, tumeric craft beer hashtag af swag salvia. Cliche keytar stumptown cardigan, health goth kickstarter everyday carry +1 chartreuse. Photo booth viral hammock trust fund chicharrones, green juice kogi kitsch humblebrag ramps. Cliche street art adaptogen distillery pickled leggings taxidermy XOXO raclette +1. Normcore you probably haven't heard of them jianbing austin palo santo yuccie, biodiesel raw denim forage. Salvia bespoke trust fund skateboard, blog authentic edison bulb street art leggings. Tumblr authentic kickstarter meggings beard pok pok pop-up normcore neutra crucifix coloring book gastropub. Bicycle rights irony fingerstache ethical cliche viral pok pok.
           </div>
@@ -133,12 +133,27 @@
       <div class="publications-item">
         <div class="row no-gutters">
           <div class="col-md-7">
-            <p class="publications-lot">Номер лоту: <span class="text-uppercase">q82657b16132</span></p>
+            <p class="publications-lot subtitle-secondary">Номер лоту: <span class="text-uppercase">q82657b16132</span></p>
             <h4 class="publications-title"><a class="link-primary" href="#">Права вимоги за кредитним договором № КЛ/13/30 від 12.12.2013р. (із забезпеченням: майнові права на грошові кошти)</a></h4>
             <div class="row">
               <div class="col-md-6">
                 <p class="publications-org">Публічне акціонерне товариство &laquo;Терра Банк&raquo;</p>
-                <a href="#" class="link-secondary">Про організатора</a>
+                <div class="publications-org-about">
+                  <a href="#" class="popover-trigger link-secondary">Про організатора</a>
+                  <div class="webui-popover-content">
+                    <div class="org-info">
+                      <p class="font-weight-bold mb-0">Контактна особа:</p>
+                      <p class="org-name">Роман Погребняк</p>
+                      <p class="font-weight-bold mb-0">E-mail:</p>
+                      <p class="org-email">roman.pogrebniak@fidobank.ua</p>
+                      <p class="font-weight-bold mb-0">Телефон:</p>
+                      <p class="org-telephone">(044) 593 00 00</p>
+                      <p class="font-weight-bold mb-0">ЄДРПОУ:</p>
+                      <p class="org-edrpou">14351016</p>
+                      <a href="#" class="link-primary">Всі аукціони організатора</a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-md-6">
                 <div class="publications-type-fa">
@@ -150,41 +165,107 @@
           <div class="col-md-5">
             <div class="row">
               <div class="col-md-6">
-                <div class="publications-status">
-                  <p>Статус</p>
+                <div class="publications-status mb-4">
+                  <p class="subtitle-secondary mb-2">Статус</p>
                   <p class="text-success font-weight-bold mb-4">Прийом пропозицій</p>
                 </div>
                 <div class="publications-left">
-                  <p>Залишилось</p>
-                  <p>11 дн. 1 год. 40 хв.</p>
+                  <p class="subtitle-secondary mb-2">Залишилось</p>
+                  <p class="publications-left-time font-weight-bold">11 дн. 1 год. 40 хв.</p>
                 </div>
               </div>
-              <div class="col-md-6"></div>
+              <div class="col-md-6">
+                <div class="publications-starting-price mb-4">
+                  <p class="subtitle-secondary mb-1">Початкова ціна</p>
+                  <p class="publications-starting-price-value font-weight-bold">199 234 175,74 грн.</p>
+                </div>
+                <a class="btn btn-primary mt-3" href="#">Взяти участь</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="publications-item">
-        <div class="row no-gutters">
-          <div class="col-md-7">
-            <p class="publications-lot">Номер лоту: <span class="text-uppercase">q82657b16132</span></p>
-            <h4 class="publications-title"><a class="link-primary" href="#">Права вимоги за кредитним договором № КЛ/13/30 від 12.12.2013р. (із забезпеченням: майнові права на грошові кошти)</a></h4>
-            <div class="row">
-              <div class="col-md-6">
-                <p class="publications-org">Публічне акціонерне товариство &laquo;Терра Банк&raquo;</p>
-                <a href="#" class="link-secondary">Про організатора</a>
+      <a href="#" class="btn btn-lg btn-primary btn-block mt-4">Переглянути всі публікації</a>
+    </section>
+    <section class="how-it-works container">
+      <h2 class="how-it-works-title">Як це працює</h2>
+      <div class="row no-gutters">
+        <div class="col-lg-8">
+          <div class="how-it-works-list row no-gutters font-weight-bold">
+            <div class="col-12 how-it-works-list-item">
+              <div class="row">
+                <div class="col-md-3 how-it-works-list-title">
+                  <p><span style="color:#5c6bc0">1. </span>Оголошення</p>
+                </div>
+                <div class="col-md-9 how-it-works-list-description">
+                  <p>Замовник публікує оголошення, яке містить опис активу (майна), початкову ціну, умови участі, розмір гарантійного внеску та іншу інформацію.</p>
+                </div>
               </div>
-              <div class="col-md-6">
-                <div class="publications-type-mlb">
-                  <p>Майно ліквідованих банків</p>
+            </div>
+            <div class="col-12 how-it-works-list-item">
+              <div class="row">
+                <div class="col-md-3 how-it-works-list-title">
+                  <p><span style="color:#5c6bc0">2. </span>Реєстрація</p>
+                </div>
+                <div class="col-md-9 how-it-works-list-description">
+                  <p>Умовою участі в електронних торгах є проходження процедури ідентифікації. Зареєстрований користувач отримує доступ до особистого кабінету та балансу.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 how-it-works-list-item">
+              <div class="row">
+                <div class="col-md-3 how-it-works-list-title">
+                  <p><span style="color:#5c6bc0">3. </span>Заява</p>
+                </div>
+                <div class="col-md-9 how-it-works-list-description">
+                  <p>Заява містить закриту цінову пропозицію (не менше початкової ціни лота). Подання заяви передбачає автоматичне списання (блокування) суми гарантійного внеску з балансу користувача.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 how-it-works-list-item">
+              <div class="row">
+                <div class="col-md-3 how-it-works-list-title">
+                  <p><span style="color:#5c6bc0">4. </span>Аукціон</p>
+                </div>
+                <div class="col-md-9 how-it-works-list-description">
+                  <p>Відбувається за умови участі 2 і більше учасників. Проводиться у формі анонімних торгів — доступні лише порядкові номери учасників та їх кількість.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 how-it-works-list-item">
+              <div class="row">
+                <div class="col-md-3 how-it-works-list-title">
+                  <p><span style="color:#5c6bc0">5. </span>Кваліфікація</p>
+                </div>
+                <div class="col-md-9 how-it-works-list-description">
+                  <p>Переможцем аукціону визнається учасник, що подав найвищу цінову пропозицію. У разі невиконання переможцем умов продажу — він дискваліфікується.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 how-it-works-list-item">
+              <div class="row">
+                <div class="col-md-3 how-it-works-list-title">
+                  <p><span style="color:#5c6bc0">6. </span>Договор</p>
+                </div>
+                <div class="col-md-9 how-it-works-list-description">
+                  <p>Договір укладається за межами майданчика протягом 20 робочих днів з дня формування протоколу торгів. Переможець сплачує <a class="link-primary" href="#">винагороду</a> організатору з суми гарантійного внеску.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-5">
-
-          </div>
         </div>
+        <aside class="col-lg-4">
+          <div class="register-block">
+            <h3>Учасникам</h3>
+            <p class="mb-4">Купуйте майно банків вигідно.<br>
+            Доступ до всіх аукціонів</p>
+            <a href="#" class="btn btn-warning btn-block">Реєстрація учасника</a>
+            <h3>Замовникам</h3>
+            <p class="mb-4">Продавайте швидко.<br>
+            Не втрачайте вартість активів</p>
+            <a href="#" class="btn btn-primary btn-block">Реєстрація замовника</a>
+          </div>
+        </aside>
       </div>
     </section>
     <div class="container justify-content">
@@ -231,6 +312,9 @@
 <!-- Bootstrap.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- WebUI Popover -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.css">
+<script src="https://cdn.jsdelivr.net/jquery.webui-popover/1.2.1/jquery.webui-popover.min.js"></script>
 <!-- Custom JS scripts -->
 <script src="dist/scripts.min.js"></script>
 
