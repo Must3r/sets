@@ -15,6 +15,8 @@ body {
   }
 }
 
+
+
 h4 {
   font-size: 18px;
 }
@@ -98,6 +100,40 @@ h4 {
     @include padding(35px, 20px, 45px, 40px);
     border: 1px solid $border-color-light ;
   }
+  &-lot {
+    font-size: 14px;
+    color: $border-color-dark;
+  }
+  &-title {
+    margin-bottom: 20px;
+  }
+  &-org {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  &-type {
+    border-left: 1px solid $border-color-dark;
+
+    @each $type, $nor in fa, mlb {
+      &-#{$type} {
+        background-image: url('../images/#{$type}-icon.png');
+        background-repeat: no-repeat;
+        background-position: 20px 50%;
+        font-size: 14px;
+        border-left: 1px solid $border-color-dark;
+        color: $border-color-dark;
+        p {
+          padding-left: 60px;
+          line-height: 3.5;
+        }
+      }
+    }
+  }
+  &-status {
+    p {
+      color: $border-color-dark;
+    }
+  }
 }
 
 /* ---------------------------------------
@@ -146,9 +182,8 @@ h4 {
   Readjusted Bootstrap Link Styles
 ---------------------------------- */
 a {
-  color: $primary-link-color;
   &:hover {
-    color: $primary-color;
+    text-decoration: none;
   }
 }
 

@@ -30,6 +30,15 @@
       box-shadow: inset 0 -3px 0 rgb(254,193,7);
     }
   }
+}
+
+.link {
+  &-primary {
+    color: $primary-link-color;
+    &:hover {
+      color: $primary-color;
+    }
+  }
   &-secondary {
     background-color: transparent;
     border: 0;
