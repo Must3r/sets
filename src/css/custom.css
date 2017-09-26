@@ -34,6 +34,14 @@
 .btn-warning:focus {
   box-shadow: inset 0 -3px 0 #fec107; }
 
+.btn-outline-primary {
+  background-color: transparent;
+  color: #5c6bc0;
+  border-color: #5c6bc0; }
+  .btn-outline-primary:hover {
+    background-color: #5c6bc0;
+    border-color: #5c6bc0; }
+
 .link-primary {
   color: #4470b2;
   border-bottom: 1px solid transparent; }
@@ -55,6 +63,9 @@
     box-shadow: none;
     outline: 0; }
 
+.link-copyright {
+  color: #c6cacc; }
+
 body {
   font-family: 'Exo 2', sans-serif;
   color: #222222;
@@ -74,6 +85,13 @@ h3 {
 
 h4 {
   font-size: 18px; }
+
+.site-footer {
+  background-color: #f0f1f2;
+  padding-top: 40px;
+  padding-right: 0;
+  padding-bottom: 16px;
+  padding-left: 0; }
 
 .banner {
   min-height: 80px; }
@@ -155,6 +173,8 @@ h4 {
     margin-bottom: 20px; }
   .publications-org {
     margin-bottom: 10px; }
+    .publications-org-info {
+      padding: 10px; }
   .publications-type {
     border-left: 1px solid #c6cacc; }
     .publications-type-fa {
@@ -185,9 +205,7 @@ h4 {
   font-weight: normal; }
 
 .how-it-works {
-  margin-bottom: 100px; }
-  .how-it-works-title {
-    margin-bottom: 54px; }
+  margin-bottom: 60px; }
   .how-it-works-list {
     font-size: 18px; }
     .how-it-works-list-item {
@@ -221,32 +239,98 @@ h4 {
   .register-block p {
     font-size: 14px; }
 
+.statistics {
+  background-color: #5c6bc0;
+  padding-top: 60px;
+  padding-right: 0;
+  padding-bottom: 82px;
+  padding-left: 0; }
+  .statistics p {
+    margin: 0;
+    color: #fff;
+    line-height: 1.2; }
+  .statistics-numbers {
+    font-size: 74px;
+    font-weight: bold;
+    line-height: 1.2; }
+
+.latest-news {
+  background-color: #f0f1f2;
+  padding-top: 100px;
+  padding-right: 0;
+  padding-bottom: 100px;
+  padding-left: 0; }
+  .latest-news-thumbnail {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important; }
+    .latest-news-thumbnail img {
+      max-width: 100%; }
+
+.how-it-works-title {
+  margin-bottom: 54px; }
+
+.latest-news-title {
+  margin-bottom: 54px; }
+
+.about-us {
+  padding-top: 100px;
+  padding-right: 0;
+  padding-bottom: 100px;
+  padding-left: 0; }
+
 /* ---------------------------------------
     Readjusted Bootstrap Navs Styles
    --------------------------------------- */
 .bg-primary {
-  background-color: #5c6bc0 !important; }
-
-.navbar-dark {
+  background-color: #5c6bc0 !important;
   padding-top: 0;
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0; }
-  .navbar-dark .navbar-nav .nav-link {
+  .bg-primary .navbar-nav .nav-link {
     padding-top: 13.5px;
     padding-right: 1.7vw;
     padding-bottom: 13.5px;
     padding-left: 1.7vw;
     color: #fff;
     transition: background-color .2s; }
-    .navbar-dark .navbar-nav .nav-link:hover {
+    .bg-primary .navbar-nav .nav-link:hover {
       background-color: #818cce;
       color: #fff; }
-  .navbar-dark .social .nav-link {
+  .bg-primary .social .nav-link {
     padding-top: 13.5px;
     padding-right: 15px;
     padding-bottom: 13.5px;
     padding-left: 15px; }
+
+.bg-secondary {
+  background-color: #f0f1f2 !important;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0; }
+  .bg-secondary .navbar-nav .nav-link {
+    padding-top: 13.5px;
+    padding-right: 1.7vw;
+    padding-bottom: 13.5px;
+    padding-left: 1.7vw;
+    color: #222222;
+    transition: background-color .2s;
+    text-decoration: underline; }
+    .bg-secondary .navbar-nav .nav-link:hover {
+      background-color: none;
+      color: #5c6bc0; }
+  .bg-secondary .social .nav-link {
+    padding-top: 13.5px;
+    padding-right: 15px;
+    padding-bottom: 13.5px;
+    padding-left: 15px; }
+
+.copyright {
+  color: #c6cacc;
+  padding-top: 14px;
+  border-top: 1px solid; }
 
 /* --------------------------------
   Readjusted Bootstrap Link Styles

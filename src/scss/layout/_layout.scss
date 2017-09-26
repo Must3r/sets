@@ -15,10 +15,21 @@ body {
   }
 }
 
-
-
 h4 {
   font-size: 18px;
+}
+
+.site {
+  &-header {
+
+  }
+  &-content {
+
+  }
+  &-footer {
+    background-color: $secondary-color;
+    @include padding(40px, 0, 16px, 0);
+  }
 }
 
 .banner {
@@ -109,11 +120,14 @@ h4 {
   }
   &-org {
     margin-bottom: 10px;
+    &-info {
+      padding: 10px;
+    }
   }
   &-type {
     border-left: 1px solid $border-color-dark;
 
-    @each $type, $nor in fa, mlb {
+    @each $type in fa, mlb {
       &-#{$type} {
         background-image: url('../images/#{$type}-icon.png');
         background-repeat: no-repeat;
@@ -152,9 +166,9 @@ h4 {
 }
 
 .how-it-works {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   &-title {
-    margin-bottom: 54px;
+    // margin-bottom: 54px;
   }
   &-list {
     font-size: 18px;
@@ -197,46 +211,121 @@ h4 {
   }
 }
 
+.statistics {
+  background-color: $primary-color;
+  @include padding(60px, 0, 82px, 0);
+  p {
+    margin: 0;
+    color: $reverse-text-color;
+    line-height: 1.2;
+  }
+  &-numbers {
+    font-size: 74px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+}
+
+.latest {
+  &-news {
+    background-color: $secondary-color;
+    @include padding(100px, 0, 100px, 0);
+    &-thumbnail {
+      background-size: cover !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@each $block in how-it-works, latest-news {
+  .#{$block}-title {
+    @include margin-bottom(54px);
+  }
+}
+
+.about {
+  &-us {
+    @include padding(100px, 0, 100px, 0);
+  }
+}
+
 /* ---------------------------------------
     Readjusted Bootstrap Navs Styles
    --------------------------------------- */
 
-.bg-primary {
-  background-color: $primary-color !important;
-}
-
-.navbar-dark {
-  @include padding(0, 0, 0, 0);
-  .navbar-nav {
-    .nav {
-      // &-item {
-      //   &:first-child {
-      //     a {
-      //       padding-left: 0;
-      //     }
-      //   }
-      // }
-      &-link {
-        @include padding(13.5px, 1.7vw, 13.5px, 1.7vw);
-        color: $reverse-text-color;
-        transition: background-color .2s;
-        &:hover {
-          background-color: lighten($primary-color, 10%);
+.bg {
+  &-primary {
+    background-color: $primary-color !important;
+    @include padding(0, 0, 0, 0);
+    .navbar-nav {
+      .nav {
+        // &-item {
+        //   &:first-child {
+        //     a {
+        //       padding-left: 0;
+        //     }
+        //   }
+        // }
+        &-link {
+          @include padding(13.5px, 1.7vw, 13.5px, 1.7vw);
           color: $reverse-text-color;
+          transition: background-color .2s;
+          &:hover {
+            background-color: lighten($primary-color, 10%);
+            color: $reverse-text-color;
+          }
+        }
+      }
+    }
+    .social {
+      .nav {
+        &-item {
+
+        }
+        &-link {
+          @include padding(13.5px, 15px, 13.5px, 15px);
         }
       }
     }
   }
-  .social {
-    .nav {
-      &-item {
-
+  &-secondary {
+    background-color: $secondary-color !important;
+    @include padding(0, 0, 0, 0);
+    .navbar-nav {
+      .nav {
+        &-link {
+          @include padding(13.5px, 1.7vw, 13.5px, 1.7vw);
+          color: $primary-text-color;
+          transition: background-color .2s;
+          text-decoration: underline;
+          &:hover {
+            background-color: none;
+            color: $primary-color;
+          }
+        }
       }
-      &-link {
-        @include padding(13.5px, 15px, 13.5px, 15px);
+    }
+    .social {
+      .nav {
+        &-item {
+
+        }
+        &-link {
+          @include padding(13.5px, 15px, 13.5px, 15px);
+        }
       }
     }
   }
+}
+
+.copyright {
+  color: $secondary-text-color;
+  padding-top: 14px;
+  border-top: 1px solid;
 }
 
 /* --------------------------------

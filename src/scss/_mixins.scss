@@ -10,3 +10,9 @@
 @mixin subtitle-secondary {
   color: $secondary-text-color;
 }
+
+@mixin margin-bottom($value) {
+  margin: {
+    bottom: $value;
+  }
+}
