@@ -103,7 +103,7 @@ h4 {
   &-search {
     position: relative;
     background-color: $secondary-color;
-    margin-top: -117px;
+    margin-top: calc(-117px - 1rem);
     @include padding(30px, 40px, 12px, 40px);
     border: 1px solid $border-color-light;
   }
