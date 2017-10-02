@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Exo+2:400,500,700&subset=cyrillic');
-@import "buttons",
-        "forms";
+@import url( 'https://fonts.googleapis.com/css?family=Exo+2:400,500,700&subset=cyrillic');
+@import "buttons", "forms";
 
 body {
   font-family: 'Exo 2', sans-serif;
   color: $primary-text-color;
   font-size: 16px;
 }
-
 @for $i from 1 through 3 {
   h#{$i} {
     font-size: 3.5rem - ($i - 1);
@@ -20,12 +18,10 @@ h4 {
 }
 
 .site {
-  &-header {
+  &-header {}
 
-  }
-  &-content {
+  &-content {}
 
-  }
   &-footer {
     background-color: $secondary-color;
     @include padding(40px, 0, 16px, 0);
@@ -45,7 +41,7 @@ h4 {
 .accredit {
   display: inline-block;
   margin-left: 9px;
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
   vertical-align: middle;
   font-size: 12px;
   line-height: 1.2;
@@ -56,6 +52,7 @@ h4 {
   @include padding(0, 15px, 0, 15px);
   line-height: 1.3;
   vertical-align: middle;
+
   a[href^="tel:"] {
     color: $primary-text-color;
     text-decoration: none;
@@ -69,7 +66,6 @@ h4 {
   height: 100%;
   left: 0;
   top: 0;
-
 }
 
 .jumbotron {
@@ -77,18 +73,23 @@ h4 {
     position: relative;
     color: $reverse-text-color;
   }
+
   &-title {
     margin-bottom: 40px;
   }
+
   &-subtitle {
     font-size: 26px;
   }
+
   &-factoid {
     @include padding(18px, 15px, 18px, 26px);
     border-left: 2px solid $primary-color;
+
     a {
       color: $reverse-text-color;
       border-bottom: 1px solid rgba(255,255,255,.5);
+
       &:hover {
         color: $reverse-text-color;
         border-bottom: 1px solid rgba(255,255,255,1);
@@ -100,33 +101,41 @@ h4 {
 
 .publications {
   margin-bottom: 90px;
+
+  &-title {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
   &-search {
     position: relative;
     background-color: $secondary-color;
-    margin-top: calc(-117px - 1rem);
     @include padding(30px, 40px, 12px, 40px);
     border: 1px solid $border-color-light;
   }
+
   &-item {
     background-color: $reverse-color;
     @include padding(35px, 40px, 45px, 40px);
-    border: 1px solid $border-color-light ;
-  }
-  &-lot {
+    border: 1px solid $border-color-light;
 
+    &-title {
+      margin-bottom: 20px;
+    }
   }
-  &-title {
-    margin-bottom: 20px;
-  }
+
+  &-lot {}
+
   &-org {
     margin-bottom: 10px;
+
     &-info {
       padding: 10px;
     }
   }
+
   &-type {
     border-left: 1px solid $border-color-dark;
-
     @each $type in fa, mlb {
       &-#{$type} {
         background-image: url('../images/#{$type}-icon.png');
@@ -134,6 +143,7 @@ h4 {
         background-position: 20px 50%;
         border-left: 1px solid $border-color-dark;
         @include subtitle-secondary;
+
         p {
           padding-left: 60px;
           line-height: 3.5;
@@ -141,14 +151,15 @@ h4 {
       }
     }
   }
-  &-status {
 
-  }
+  &-status {}
+
   &-left {
     &-time {
       font-size: 18px;
     }
   }
+
   &-starting {
     &-price {
       &-value {
@@ -159,6 +170,10 @@ h4 {
 }
 
 .subtitle {
+  &-primary {
+    color: $primary-color;
+    font-weight: normal;
+  }
   &-secondary {
     color: $secondary-text-color;
     font-weight: normal;
@@ -167,27 +182,33 @@ h4 {
 
 .how-it-works {
   margin-bottom: 60px;
+
   &-title {
     // margin-bottom: 54px;
   }
+
   &-list {
     font-size: 18px;
+
     &-item {
       margin-bottom: 20px;
     }
+
     &-title {
       color: $primary-text-color;
     }
+
     &-description {
       padding-left: 46px;
       padding-right: 50px;
       font-weight: normal;
       font-size: 16px;
+
       &:before {
         position: absolute;
-        content:"\2014";
+        content: "\2014";
         font-size: 36px;
-        line-height: .5;
+        line-height: 0.5;
         color: $primary-color;
         left: 0;
         top: 0;
@@ -202,9 +223,11 @@ h4 {
     display: inline-block;
     width: 100%;
     @include padding(7px, 73px !important, 70px, 73px !important);
+
     h3 {
       margin-top: 45px;
     }
+
     p {
       font-size: 14px;
     }
@@ -214,11 +237,13 @@ h4 {
 .statistics {
   background-color: $primary-color;
   @include padding(60px, 0, 82px, 0);
+
   p {
     margin: 0;
     color: $reverse-text-color;
     line-height: 1.2;
   }
+
   &-numbers {
     font-size: 74px;
     font-weight: bold;
@@ -230,17 +255,18 @@ h4 {
   &-news {
     background-color: $secondary-color;
     @include padding(100px, 0, 100px, 0);
+
     &-thumbnail {
       background-size: cover !important;
       background-position: center !important;
       background-repeat: no-repeat !important;
+
       img {
         max-width: 100%;
       }
     }
   }
 }
-
 @each $block in how-it-works, latest-news {
   .#{$block}-title {
     @include margin-bottom(54px);
@@ -253,14 +279,29 @@ h4 {
   }
 }
 
+.lot {
+  @include padding(60px, 0, 100px, 0);
+  &-title {
+    font-weight: normal;
+  }
+  &-info {
+    background-color: $secondary-color;
+    @include padding(40px, 40px, 40px, 40px);
+  }
+  &-subdescription {
+    background-color: $secondary-color;
+    padding: 5px;
+    color: $secondary-text-color;
+  }
+}
 /* ---------------------------------------
     Readjusted Bootstrap Navs Styles
    --------------------------------------- */
-
 .bg {
   &-primary {
     background-color: $primary-color !important;
     @include padding(0, 0, 0, 0);
+
     .navbar-nav {
       .nav {
         // &-item {
@@ -273,7 +314,8 @@ h4 {
         &-link {
           @include padding(13.5px, 1.7vw, 13.5px, 1.7vw);
           color: $reverse-text-color;
-          transition: background-color .2s;
+          transition: background-color 0.2s;
+
           &:hover {
             background-color: lighten($primary-color, 10%);
             color: $reverse-text-color;
@@ -281,27 +323,30 @@ h4 {
         }
       }
     }
+
     .social {
       .nav {
-        &-item {
+        &-item {}
 
-        }
         &-link {
           @include padding(13.5px, 15px, 13.5px, 15px);
         }
       }
     }
   }
+
   &-secondary {
     background-color: $secondary-color !important;
     @include padding(0, 0, 0, 0);
+
     .navbar-nav {
       .nav {
         &-link {
           @include padding(13.5px, 1.7vw, 13.5px, 1.7vw);
           color: $primary-text-color;
-          transition: background-color .2s;
+          transition: background-color 0.2s;
           text-decoration: underline;
+
           &:hover {
             background-color: none;
             color: $primary-color;
@@ -309,11 +354,11 @@ h4 {
         }
       }
     }
+
     .social {
       .nav {
-        &-item {
+        &-item {}
 
-        }
         &-link {
           @include padding(13.5px, 15px, 13.5px, 15px);
         }
@@ -327,7 +372,6 @@ h4 {
   padding-top: 14px;
   border-top: 1px solid;
 }
-
 /* --------------------------------
   Readjusted Bootstrap Link Styles
 ---------------------------------- */
@@ -336,15 +380,40 @@ a {
     text-decoration: none;
   }
 }
-
 /* --------------------------------
 Readjusted Bootstrap Jumbotron Styles
 ---------------------------------- */
-
 .jumbotron {
   position: relative;
   background: url('../images/img-main-screen.jpg');
   min-height: 512px;
   margin: 0;
   border-radius: 0;
+}
+/* --------------------------------
+Readjusted Bootstrap Pagination Styles
+---------------------------------- */
+.pagination {
+  margin-top: 60px;
+
+  .page {
+    &-item {
+      border-color: $primary-color;
+      a {
+        color: $primary-color;
+      }
+      &.active {
+        a {
+          background-color: $primary-color;
+          border-color: $primary-color;
+        }
+      }
+    }
+  }
+}
+/* ---------------------------------------
+    Readjusted Bootstrap Table Styles
+   --------------------------------------- */
+.table thead th {
+  vertical-align: middle;
 }

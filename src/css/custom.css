@@ -102,7 +102,7 @@ h4 {
 .accredit {
   display: inline-block;
   margin-left: 9px;
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
   vertical-align: middle;
   font-size: 12px;
   line-height: 1.2; }
@@ -153,10 +153,12 @@ h4 {
 
 .publications {
   margin-bottom: 90px; }
+  .publications-title {
+    margin-top: 60px;
+    margin-bottom: 40px; }
   .publications-search {
     position: relative;
     background-color: #f0f1f2;
-    margin-top: calc(-117px - 1rem);
     padding-top: 30px;
     padding-right: 40px;
     padding-bottom: 12px;
@@ -169,8 +171,8 @@ h4 {
     padding-bottom: 45px;
     padding-left: 40px;
     border: 1px solid #dcdde0; }
-  .publications-title {
-    margin-bottom: 20px; }
+    .publications-item-title {
+      margin-bottom: 20px; }
   .publications-org {
     margin-bottom: 10px; }
     .publications-org-info {
@@ -200,6 +202,10 @@ h4 {
   .publications-starting-price-value {
     font-size: 18px; }
 
+.subtitle-primary {
+  color: #5c6bc0;
+  font-weight: normal; }
+
 .subtitle-secondary {
   color: #c6cacc;
   font-weight: normal; }
@@ -221,7 +227,7 @@ h4 {
         position: absolute;
         content: "\2014";
         font-size: 36px;
-        line-height: .5;
+        line-height: 0.5;
         color: #5c6bc0;
         left: 0;
         top: 0; }
@@ -279,6 +285,24 @@ h4 {
   padding-bottom: 100px;
   padding-left: 0; }
 
+.lot {
+  padding-top: 60px;
+  padding-right: 0;
+  padding-bottom: 100px;
+  padding-left: 0; }
+  .lot-title {
+    font-weight: normal; }
+  .lot-info {
+    background-color: #f0f1f2;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px; }
+  .lot-subdescription {
+    background-color: #f0f1f2;
+    padding: 5px;
+    color: #c6cacc; }
+
 /* ---------------------------------------
     Readjusted Bootstrap Navs Styles
    --------------------------------------- */
@@ -294,7 +318,7 @@ h4 {
     padding-bottom: 13.5px;
     padding-left: 1.7vw;
     color: #fff;
-    transition: background-color .2s; }
+    transition: background-color 0.2s; }
     .bg-primary .navbar-nav .nav-link:hover {
       background-color: #818cce;
       color: #fff; }
@@ -316,7 +340,7 @@ h4 {
     padding-bottom: 13.5px;
     padding-left: 1.7vw;
     color: #222222;
-    transition: background-color .2s;
+    transition: background-color 0.2s;
     text-decoration: underline; }
     .bg-secondary .navbar-nav .nav-link:hover {
       background-color: none;
@@ -347,3 +371,22 @@ Readjusted Bootstrap Jumbotron Styles
   min-height: 512px;
   margin: 0;
   border-radius: 0; }
+
+/* --------------------------------
+Readjusted Bootstrap Pagination Styles
+---------------------------------- */
+.pagination {
+  margin-top: 60px; }
+  .pagination .page-item {
+    border-color: #5c6bc0; }
+    .pagination .page-item a {
+      color: #5c6bc0; }
+    .pagination .page-item.active a {
+      background-color: #5c6bc0;
+      border-color: #5c6bc0; }
+
+/* ---------------------------------------
+    Readjusted Bootstrap Table Styles
+   --------------------------------------- */
+.table thead th {
+  vertical-align: middle; }
