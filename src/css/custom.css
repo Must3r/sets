@@ -184,7 +184,7 @@ h4 {
       background-repeat: no-repeat;
       background-position: 20px 50%;
       border-left: 1px solid #c6cacc;
-      color: #c6cacc; }
+      color: #666666; }
       .publications-type-fa p {
         padding-left: 60px;
         line-height: 3.5; }
@@ -193,7 +193,7 @@ h4 {
       background-repeat: no-repeat;
       background-position: 20px 50%;
       border-left: 1px solid #c6cacc;
-      color: #c6cacc; }
+      color: #666666; }
       .publications-type-mlb p {
         padding-left: 60px;
         line-height: 3.5; }
@@ -207,7 +207,7 @@ h4 {
   font-weight: normal; }
 
 .subtitle-secondary {
-  color: #c6cacc;
+  color: #666666;
   font-weight: normal; }
 
 .how-it-works {
@@ -301,7 +301,41 @@ h4 {
   .lot-subdescription {
     background-color: #f0f1f2;
     padding: 5px;
-    color: #c6cacc; }
+    color: #666666; }
+  .lot-doc {
+    padding-left: 72px; }
+    .lot-doc-doc {
+      background-image: url("../images/icon-doc-doc.png");
+      background-repeat: no-repeat;
+      background-position: 15px 0; }
+    .lot-doc-txt {
+      background-image: url("../images/icon-doc-txt.png");
+      background-repeat: no-repeat;
+      background-position: 15px 0; }
+    .lot-doc-jpg {
+      background-image: url("../images/icon-doc-jpg.png");
+      background-repeat: no-repeat;
+      background-position: 15px 0; }
+    .lot-doc-png {
+      background-image: url("../images/icon-doc-png.png");
+      background-repeat: no-repeat;
+      background-position: 15px 0; }
+    .lot-doc-xls {
+      background-image: url("../images/icon-doc-xls.png");
+      background-repeat: no-repeat;
+      background-position: 15px 0; }
+    .lot-doc-pdf {
+      background-image: url("../images/icon-doc-pdf.png");
+      background-repeat: no-repeat;
+      background-position: 15px 0; }
+    .lot-doc-href {
+      background-image: url("../images/icon-doc-href.png");
+      background-repeat: no-repeat;
+      background-position: 15px 0; }
+    .lot-doc-default {
+      background-image: url("../images/icon-doc-default.png");
+      background-repeat: no-repeat;
+      background-position: 15px 0; }
 
 /* ---------------------------------------
     Readjusted Bootstrap Navs Styles
@@ -384,6 +418,12 @@ Readjusted Bootstrap Pagination Styles
     .pagination .page-item.active a {
       background-color: #5c6bc0;
       border-color: #5c6bc0; }
+
+/* --------------------------------
+Readjusted Bootstrap Nav Tabs Styles
+---------------------------------- */
+.nav-tabs .nav-link.active {
+  border-top: 4px solid #5c6bc0; }
 
 /* ---------------------------------------
     Readjusted Bootstrap Table Styles

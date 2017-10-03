@@ -175,7 +175,7 @@ h4 {
     font-weight: normal;
   }
   &-secondary {
-    color: $secondary-text-color;
+    color: $secondary-text-color-dark;
     font-weight: normal;
   }
 }
@@ -291,7 +291,17 @@ h4 {
   &-subdescription {
     background-color: $secondary-color;
     padding: 5px;
-    color: $secondary-text-color;
+    @include subtitle-secondary;
+  }
+  &-doc {
+    padding-left: 72px;
+    @each $type in doc, txt, jpg, png, xls, pdf, href, default {
+      &-#{$type} {
+        background-image: url('../images/icon-doc-#{$type}.png');
+        background-repeat: no-repeat;
+        background-position: 15px 0;
+      }
+    }
   }
 }
 /* ---------------------------------------
@@ -411,6 +421,23 @@ Readjusted Bootstrap Pagination Styles
     }
   }
 }
+
+/* --------------------------------
+Readjusted Bootstrap Nav Tabs Styles
+---------------------------------- */
+.nav {
+  &-tabs {
+    .nav {
+      &-link {
+        &.active {
+          border-top: 4px solid $primary-color;
+        }
+      }
+    }
+  }
+}
+
+
 /* ---------------------------------------
     Readjusted Bootstrap Table Styles
    --------------------------------------- */
