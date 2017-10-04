@@ -371,12 +371,46 @@ h4 {
       .news-item-title a:hover {
         color: #4470b2;
         border-bottom: 1px solid; }
+  .news-post {
+    position: relative;
+    padding-top: 60px;
+    padding-right: 0;
+    padding-bottom: 150px;
+    padding-left: 0; }
+    .news-post-content {
+      padding-bottom: 60px; }
+      .news-post-content:after {
+        position: absolute;
+        left: 15px;
+        bottom: 0;
+        content: " ";
+        width: calc(100% - 30px);
+        border-bottom: 1px solid #dcdde0; }
+    .news-post-title {
+      margin-bottom: 20px;
+      font-weight: normal; }
+    .news-post-image {
+      margin-top: 30px;
+      margin-bottom: 50px; }
   .news-date {
     background: url("../images/icon-calendar.png");
     background-repeat: no-repeat;
     background-position: 0 center;
     padding-left: 20px;
     color: #5c6bc0; }
+
+.other-news ul {
+  list-style-type: none; }
+
+.other-news-title {
+  margin-bottom: 40px;
+  font-weight: bold;
+  line-height: 22px; }
+
+.other-news-item {
+  margin-bottom: 40px; }
+  .other-news-item p a {
+    color: #222222; }
 
 /* ---------------------------------------
     Readjusted Bootstrap Navs Styles

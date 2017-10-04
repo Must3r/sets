@@ -336,12 +336,58 @@ h4 {
       }
     }
   }
+  &-post {
+    position: relative;
+    @include padding(60px, 0, 150px, 0);
+    &-content {
+      padding-bottom: 60px;
+      &:after {
+        position: absolute;
+        left: 15px ;
+        bottom: 0;
+        content: " ";
+        width: calc(100% - 30px);
+        border-bottom: 1px solid $border-color-light;
+      }
+    }
+    &-title {
+      margin-bottom: 20px;
+      font-weight: normal;
+    }
+    &-image {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+  }
   &-date {
     background: url('../images/icon-calendar.png');
     background-repeat: no-repeat;
     background-position: 0 center;
     padding-left: 20px;
     color: $primary-color;
+  }
+}
+
+.other {
+  &-news {
+    ul {
+      // position:sticky;
+      // top:50px;
+      list-style-type: none;
+    }
+    &-title {
+      margin-bottom: 40px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+    &-item {
+      margin-bottom: 40px;
+      p {
+        a {
+          color: $primary-text-color;
+        }
+      }
+    }
   }
 }
 
