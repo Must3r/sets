@@ -197,6 +197,15 @@ h4 {
       .publications-type-mlb p {
         padding-left: 60px;
         line-height: 3.5; }
+    .publications-type-dutch {
+      background-image: url("../images/dutch-icon.png");
+      background-repeat: no-repeat;
+      background-position: 20px 50%;
+      border-left: 1px solid #c6cacc;
+      color: #666666; }
+      .publications-type-dutch p {
+        padding-left: 60px;
+        line-height: 3.5; }
   .publications-left-time {
     font-size: 18px; }
   .publications-starting-price-value {
@@ -293,6 +302,9 @@ h4 {
   .lot-title {
     font-weight: normal; }
   .lot-info {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
     background-color: #f0f1f2;
     padding-top: 40px;
     padding-right: 40px;
@@ -336,6 +348,29 @@ h4 {
       background-image: url("../images/icon-doc-default.png");
       background-repeat: no-repeat;
       background-position: 15px 0; }
+
+.news {
+  margin-bottom: 90px; }
+  .news-title {
+    margin-top: 60px;
+    margin-bottom: 40px; }
+  .news-item {
+    position: relative;
+    padding-bottom: 45px;
+    margin-bottom: 41px; }
+    .news-item:after {
+      position: absolute;
+      content: " ";
+      left: 15px;
+      bottom: 0;
+      width: calc(100% - 30px);
+      border-bottom: 1px solid #dcdde0; }
+  .news-date {
+    background: url("../images/icon-calendar.png");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    padding-left: 20px;
+    color: #5c6bc0; }
 
 /* ---------------------------------------
     Readjusted Bootstrap Navs Styles

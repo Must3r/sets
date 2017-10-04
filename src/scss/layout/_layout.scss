@@ -136,7 +136,7 @@ h4 {
 
   &-type {
     border-left: 1px solid $border-color-dark;
-    @each $type in fa, mlb {
+    @each $type in fa, mlb, dutch {
       &-#{$type} {
         background-image: url('../images/#{$type}-icon.png');
         background-repeat: no-repeat;
@@ -285,6 +285,8 @@ h4 {
     font-weight: normal;
   }
   &-info {
+    position:sticky;
+    top:50px;
     background-color: $secondary-color;
     @include padding(40px, 40px, 40px, 40px);
   }
@@ -304,6 +306,35 @@ h4 {
     }
   }
 }
+
+.news {
+  margin-bottom: 90px;
+  &-title {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  &-item {
+    position: relative;
+    padding-bottom: 45px;
+    margin-bottom: 41px;
+    &:after{
+      position: absolute;
+      content: " ";
+      left: 15px;
+      bottom: 0;
+      width: calc(100% - 30px);
+      border-bottom: 1px solid $border-color-light;
+    }
+  }
+  &-date {
+    background: url('../images/icon-calendar.png');
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    padding-left: 20px;
+    color: $primary-color;
+  }
+}
+
 /* ---------------------------------------
     Readjusted Bootstrap Navs Styles
    --------------------------------------- */
