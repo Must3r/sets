@@ -100,7 +100,6 @@ h4 {
   margin-left: 37px; }
 
 .accredit {
-  display: inline-block;
   margin-left: 9px;
   margin-bottom: 0.2rem;
   vertical-align: middle;
@@ -412,6 +411,28 @@ h4 {
   .other-news-item p a {
     color: #222222; }
 
+.copyright {
+  color: #c6cacc;
+  padding-top: 14px;
+  border-top: 1px solid; }
+
+.faq-item {
+  position: relative;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  margin-bottom: 40px; }
+  .faq-item:after {
+    position: absolute;
+    content: " ";
+    right: 40px;
+    bottom: 0;
+    width: 60%;
+    border-bottom: 1px solid #dcdde0; }
+  .faq-item-header {
+    margin-bottom: 20px; }
+
 /* ---------------------------------------
     Readjusted Bootstrap Navs Styles
    --------------------------------------- */
@@ -459,11 +480,6 @@ h4 {
     padding-right: 15px;
     padding-bottom: 13.5px;
     padding-left: 15px; }
-
-.copyright {
-  color: #c6cacc;
-  padding-top: 14px;
-  border-top: 1px solid; }
 
 /* --------------------------------
   Readjusted Bootstrap Link Styles

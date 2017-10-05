@@ -6,6 +6,7 @@ body {
   color: $primary-text-color;
   font-size: 16px;
 }
+
 @for $i from 1 through 3 {
   h#{$i} {
     font-size: 3.5rem - ($i - 1);
@@ -39,7 +40,7 @@ h4 {
 }
 
 .accredit {
-  display: inline-block;
+  // display: inline-block;
   margin-left: 9px;
   margin-bottom: 0.2rem;
   vertical-align: middle;
@@ -391,6 +392,30 @@ h4 {
   }
 }
 
+.copyright {
+  color: $secondary-text-color;
+  padding-top: 14px;
+  border-top: 1px solid;
+}
+
+.faq {
+  &-item {
+    position: relative;
+    @include padding(20px, 40px, 20px, 40px);
+    margin-bottom: 40px;
+    &:after {
+      position: absolute;
+      content: " ";
+      right: 40px;
+      bottom: 0;
+      width: 60%;
+      border-bottom: 1px solid $border-color-light;
+    }
+    &-header {
+      margin-bottom: 20px;
+    }
+  }
+}
 /* ---------------------------------------
     Readjusted Bootstrap Navs Styles
    --------------------------------------- */
@@ -462,12 +487,6 @@ h4 {
       }
     }
   }
-}
-
-.copyright {
-  color: $secondary-text-color;
-  padding-top: 14px;
-  border-top: 1px solid;
 }
 /* --------------------------------
   Readjusted Bootstrap Link Styles
