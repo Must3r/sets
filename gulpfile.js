@@ -21,18 +21,16 @@ var gulp = require('gulp'), //Gulp itself
 gulp.task('sass', function() {
     return gulp.src('./src/scss/**/*.scss')
         .pipe(plumber())
-        .pipe(sourcemaps.init())
-          .pipe(sasstocss())
-          .pipe(autoprefixer({
-              browsers: ['last 2 versions'],
-              cascade: false
-          }))
-          .pipe(gulp.dest('./src/css'))
-          .pipe(cssmin())
-          .pipe(rename({
-              suffix: '.min'
-          }))
-        .pipe(sourcemaps.write())
+        .pipe(sasstocss())
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('./src/css'))
+        .pipe(cssmin())
+        .pipe(rename({
+            suffix: '.min'
+        }))
         .pipe(gulp.dest('./dist'))
     // .pipe(browserSync.stream())
 })
