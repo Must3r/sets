@@ -27,41 +27,118 @@
   <!-- Site Header -->
   <section class="banner d-flex align-items-center">
     <div class="container">
-      <div class="row">
-        <div class="col-6 col-md-6 align-self-center">
+      <div class="row no-gutters">
+        <div class="col-6 col-sm-4 col-lg-6 align-self-center">
           <a href="#"><img class="logo" src="images/logo.png" alt=""></a>
-          <img class="d-none d-sm-inline-block logo-prozorro" src="images/logo-prozorro.png" alt="">
-          <p class="d-none d-sm-inline-block accredit">Акредитований<br>майданчик</p>
+          <img class="d-none d-lg-inline-block logo-prozorro" src="images/logo-prozorro.png" alt="">
+          <p class="d-none d-lg-inline-block accredit">Акредитований<br>майданчик</p>
         </div>
-        <div class="col-12 col-md-6 align-self-center text-right d-none d-sm-inline-block">
-          <span class="contact-info text-left">
+        <div class="col-12 col-sm-6 align-self-center text-right d-none d-sm-inline-block">
+          <span class="contact-info text-left d-none ">
                 <a href="tel:+380508883298">050-888-32-98</a><br>
                 <a href="tel:+380988883298">098-888-32-98</a>
               </span>
-          <span class="contact-info text-left">
+          <span class="contact-info text-left d-none ">
                 <a href="tel:+380443337098">044-333-70-98</a><br>
                 <a class="link-primary" href="mailto:info@sets.org.ua">info@sets.org.ua</a>
               </span>
           <a href="#" class="btn btn-primary btn-signin">Вхід</a>
           <a href="#" class="btn btn-warning btn-signup">Реєстрація</a>
         </div>
-        <div class="col-6 d-inline-block d-sm-none">
-          asdasdasdas
+        <div class="col-6 col-sm-2 d-inline-block d-lg-none align-self-center text-right">
+          <button type="button" id="miniRegCall" class="btn btn-primary d-sm-none">
+            <img src="/images/icon-user.png">
+          </button>
+          <button type="button" id="miniListCall" class="btn btn-primary ml-3">
+            <img src="/images/menu-icon.png">
+          </button>
         </div>
       </div>
     </div>
+    <nav id="menuMiniReg" class="menu-mini-reg d-sm-none">
+      <h4 class="menu-mini-title font-weight-bold text-center">Вхід та реєстрація</h4>
+      <a href="#" class="btn btn-primary btn-block btn-lg">Вхід</a>
+      <a href="#" class="btn btn-warning btn-block btn-lg">Реєстрація</a>
+      <button type="button" class="menu-mini-close">
+        <img src="/images/icon-close.png" alt="">
+      </button>
+    </nav>
+    <nav id="menuMiniList" class="menu-mini-list d-lg-none">
+      <ul class="text-center">
+        <li><a href="/" class="link-primary">Про нас</a></li>
+        <li><a href="#" class="link-primary">Учасникам</a></li>
+        <li><a href="#" class="link-primary">Замовникам</a></li>
+        <li><a href="/publications.html" class="link-primary">Публікації</a></li>
+        <li><a href="/news-catalog.html" class="link-primary">Новини</a></li>
+        <li><a href="#" class="link-primary">Контакти</a></li>
+      </ul>
+      <div class="contact-info-mini text-center">
+        <p><a href="tel:+380443337098">044-333-70-98</a></p>
+        <p><a href="tel:+380508883298">050-888-32-98</a></p>
+        <p><a href="tel:+380988883298">098-888-32-98</a></p>
+      </div>
+      <button type="button" class="menu-mini-close">
+        <img src="/images/icon-close.png" alt="">
+      </button>
+    </nav>
   </section>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary d-none d-lg-flex">
+    <div class="container">
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#bottom-menu" aria-controls="bottom-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="bottom-menu">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Про нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Учасникам</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Замовникам</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/publications.html">Публікації</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Новини</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакти</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto social">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="images/vk.png" alt="">
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="images/fb.png" alt="">
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="images/g+.png" alt="">
+              </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <!-- END of Site Header -->
   <main class="site-content">
     <section class="jumbotron">
       <div class="overlay"></div>
-      <div class="container jumbotron-content">
+      <div class="container jumbotron-content text-center text-lg-left">
         <div class="row justify-content-between">
-          <div class="col-md-8">
+          <div class="col-lg-8">
             <h1 class="jumbotron-title"><span style="color: #5c6bc0;">СЕТС</span> &mdash; сучасні електронні торгові системи</h1>
             <p class="jumbotron-subtitle">Продаж майна банків, що ліквідуються</p>
           </div>
-          <aside class="col-md-4 align-self-center jumbotron-factoid justify-content-end">
+          <aside class="col-lg-4 align-self-center jumbotron-factoid justify-content-end">
             <h4>Акредитований учасник електронної системи торгів <a target="_blank" href="http://prozorro.sale/">Prozorro.Sale</a></h4>
           </aside>
         </div>
@@ -69,182 +146,184 @@
     </section>
     <section class="publications">
       <div class="container">
-        <div style="margin-top: calc(-117px - 1rem);" class="publications-search">
-          <form>
-            <div class="input-group mb-2">
-              <input type="text" class="form-control" placeholder="Назва аукціону, назва або код ЄДРПОУ компанії" aria-label="Search for...">
-              <span class="input-group-btn">
-                  <button class="btn btn-primary" type="button">
-                    <img src="images/icon-search.png" alt="Search">
-                  </button>
-                </span>
-            </div>
-            <input class="link-secondary mb-3 p-0" data-toggle="collapse" data-target="#expandedSearch" type="button" value="Розширений пошук">
-            <img src="images/icon-plus.png" alt="">
-          </form>
-          <div class="collapse" id="expandedSearch">
-            <div class="row no-gutters">
-              <div class="col-md-7">
-                <form>
-                  <div class="form-row">
-                    <div class="form-group col-md-6 col-lg-4 mb-0">
-                      <select class="form-control" id="search-filter-status">
-                        <option selected>Статус</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                    <div class="form-group col-md-6 col-lg-4 mb-0">
-                      <select class="form-control" id="search-filter-trades">
-                        <option selected>Всі торги</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                    <div class="form-group col-md-6 col-lg-4 mb-0">
-                      <select class="form-control" id="search-filter-region">
-                        <option selected>Регіон</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                  </div>
-                </form>
+        <div class="row">
+          <div class="col-12 publications-search publications-overlapped">
+            <form>
+              <div class="input-group mb-2">
+                <input type="text" class="form-control" placeholder="Назва аукціону, назва або код ЄДРПОУ компанії" aria-label="Search for...">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">
+                      <img src="images/icon-search.png" alt="Search">
+                    </button>
+                  </span>
               </div>
-              <div class="col-md-5 align-self-center text-center">
-                <form>
-                  <div class="form-row">
-                    <div class="col-6 col-md-2">
-                      <a href="#" class="popover-trigger link-secondary">CAV</a>
-                      <div id="extra-filter-cav" class="webui-popover-content">
-                        <div class="search-filter-cav">
-                            <div class="form-group">
-                              <label class="form-control-label" for="search-filter-cav">Введіть значення:</label>
-                              <input type="text" class="form-control mb-3" id="search-filter-cav">
-                              <input class="btn btn-primary" type="button" name="filter-cav" value="Застосувати">
-                            </div>
-                        </div>
+              <input class="link-secondary p-0" data-toggle="collapse" data-target="#expandedSearch" type="button" value="Розширений пошук">
+              <img src="images/icon-plus.png" alt="">
+            </form>
+            <div class="collapse mt-3" id="expandedSearch">
+              <div class="row no-gutters">
+                <div class="col-md-7">
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6 col-lg-4 mb-0">
+                        <select class="form-control" id="search-filter-status">
+                          <option selected>Статус</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6 col-lg-4 mb-0">
+                        <select class="form-control" id="search-filter-trades">
+                          <option selected>Всі торги</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-6 col-lg-4 mb-0">
+                        <select class="form-control" id="search-filter-region">
+                          <option selected>Регіон</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
                       </div>
                     </div>
-                    <div class="col-6 col-md-2">
-                      <a href="#" class="popover-trigger link-secondary">CPV</a>
-                      <div id="extra-filter-cpv" class="webui-popover-content">
-                        <div class="search-filter-cpv">
-                            <div class="form-group">
-                              <label class="form-control-label" for="search-filter-cpv">Введіть значення:</label>
-                              <input type="text" class="form-control mb-3" id="search-filter-cpv">
-                              <input class="btn btn-primary" type="button" name="filter-cpv" value="Застосувати">
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6 col-md-4">
-                      <a href="#" class="popover-trigger link-secondary">Початкова ціна</a>
-                      <div id="extra-filter-starting-price" class="webui-popover-content">
-                        <div class="search-filter-starting-price">
-                            <div class="form-group">
-                              <label class="form-control-label" for="search-filter-starting-price">Введіть значення:</label>
-                              <input type="text" class="form-control mb-3" id="search-filter-starting-price">
-                              <input class="btn btn-primary" type="button" name="filter-starting-price" value="Застосувати">
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6 col-md-4">
-                      <a href="#" class="popover-trigger link-secondary">Організатор</a>
-                      <div id="extra-filter-org" class="webui-popover-content">
-                        <div class="search-filter-org">
-                            <div class="form-group">
-                              <label class="form-control-label" for="search-filter-org">Введіть значення:</label>
-                              <input type="text" class="form-control mb-3" id="search-filter-org">
-                              <input class="btn btn-primary" type="button" name="filter-org" value="Застосувати">
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="row no-gutters">
-              <div class="col mt-3">
-                <input type="button" class="link-secondary" name="search-rollup" value="Згорнути">
-                <input type="button" class="link-secondary" name="search-clear" value="Очистити фільтр">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="publications-item">
-          <div class="row no-gutters">
-            <div class="col-md-7">
-              <p class="publications-lot subtitle-secondary">Номер лоту: <span class="text-uppercase">q82657b16132</span></p>
-              <h4 class="publications-item-title"><a class="link-primary" href="/lot.html">Права вимоги за кредитним договором № КЛ/13/30 від 12.12.2013р. (із забезпеченням: майнові права на грошові кошти)</a></h4>
-              <div class="row">
-                <div class="col-md-6">
-                  <p class="publications-org">Публічне акціонерне товариство &laquo;Терра Банк&raquo;</p>
-                  <div class="publications-org-about">
-                    <a href="#" class="popover-trigger link-secondary">Про організатора</a>
-                    <div class="webui-popover-content">
-                      <div class="publications-org-info">
-                        <p class="font-weight-bold mb-0">Контактна особа:</p>
-                        <p class="org-name">Роман Погребняк</p>
-                        <p class="font-weight-bold mb-0">E-mail:</p>
-                        <p class="org-email">roman.pogrebniak@fidobank.ua</p>
-                        <p class="font-weight-bold mb-0">Телефон:</p>
-                        <p class="org-telephone">(044) 593 00 00</p>
-                        <p class="font-weight-bold mb-0">ЄДРПОУ:</p>
-                        <p class="org-edrpou">14351016</p>
-                        <a href="#" class="link-primary">Всі аукціони організатора</a>
-                      </div>
-                    </div>
-                  </div>
+                  </form>
                 </div>
-                <div class="col-md-6">
-                  <div class="publications-type-fa">
-                    <p>Фінансовий актив</p>
-                  </div>
+                <div class="col-md-5 align-self-center text-center">
+                  <form>
+                    <div class="form-row">
+                      <div class="col-6 col-md-2">
+                        <a href="#" class="popover-trigger link-secondary">CAV</a>
+                        <div id="extra-filter-cav" class="webui-popover-content">
+                          <div class="search-filter-cav">
+                              <div class="form-group">
+                                <label class="form-control-label" for="search-filter-cav">Введіть значення:</label>
+                                <input type="text" class="form-control mb-3" id="search-filter-cav">
+                                <input class="btn btn-primary" type="button" name="filter-cav" value="Застосувати">
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-2">
+                        <a href="#" class="popover-trigger link-secondary">CPV</a>
+                        <div id="extra-filter-cpv" class="webui-popover-content">
+                          <div class="search-filter-cpv">
+                              <div class="form-group">
+                                <label class="form-control-label" for="search-filter-cpv">Введіть значення:</label>
+                                <input type="text" class="form-control mb-3" id="search-filter-cpv">
+                                <input class="btn btn-primary" type="button" name="filter-cpv" value="Застосувати">
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4">
+                        <a href="#" class="popover-trigger link-secondary">Початкова ціна</a>
+                        <div id="extra-filter-starting-price" class="webui-popover-content">
+                          <div class="search-filter-starting-price">
+                              <div class="form-group">
+                                <label class="form-control-label" for="search-filter-starting-price">Введіть значення:</label>
+                                <input type="text" class="form-control mb-3" id="search-filter-starting-price">
+                                <input class="btn btn-primary" type="button" name="filter-starting-price" value="Застосувати">
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4">
+                        <a href="#" class="popover-trigger link-secondary">Організатор</a>
+                        <div id="extra-filter-org" class="webui-popover-content">
+                          <div class="search-filter-org">
+                              <div class="form-group">
+                                <label class="form-control-label" for="search-filter-org">Введіть значення:</label>
+                                <input type="text" class="form-control mb-3" id="search-filter-org">
+                                <input class="btn btn-primary" type="button" name="filter-org" value="Застосувати">
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
-            </div>
-            <div class="col-md-5">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="publications-status mb-4">
-                    <p class="subtitle-secondary mb-2">Статус</p>
-                    <p class="text-success font-weight-bold mb-4">Прийом пропозицій</p>
-                  </div>
-                  <div class="publications-left">
-                    <p class="subtitle-secondary mb-2">Залишилось</p>
-                    <p class="publications-left-time font-weight-bold">11 дн. 1 год. 40 хв.</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="publications-starting-price mb-4">
-                    <p class="subtitle-secondary mb-1">Початкова ціна</p>
-                    <p class="publications-starting-price-value font-weight-bold">199 234 175,74 грн.</p>
-                  </div>
-                  <a class="btn btn-primary mt-3" href="#">Взяти участь</a><br>
-                  <a href="#" class="btn link-secondary">Детальніше</a>
+              <div class="row no-gutters">
+                <div class="col mt-3">
+                  <input type="button" class="link-secondary" name="search-rollup" value="Згорнути">
+                  <input type="button" class="link-secondary" name="search-clear" value="Очистити фільтр">
                 </div>
               </div>
             </div>
           </div>
+          <div class="publications-item">
+            <div class="row no-gutters">
+              <div class="col-lg-7">
+                <p class="publications-lot subtitle-secondary">Номер лоту: <span class="text-uppercase">q82657b16132</span></p>
+                <h4 class="publications-item-title"><a class="link-primary" href="/lot.html">Права вимоги за кредитним договором № КЛ/13/30 від 12.12.2013р. (із забезпеченням: майнові права на грошові кошти)</a></h4>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <p class="publications-org">Публічне акціонерне товариство &laquo;Терра Банк&raquo;</p>
+                    <div class="publications-org-about mb-2">
+                      <a href="#" class="popover-trigger link-secondary">Про організатора</a>
+                      <div class="webui-popover-content">
+                        <div class="publications-org-info">
+                          <p class="font-weight-bold mb-0">Контактна особа:</p>
+                          <p class="org-name">Роман Погребняк</p>
+                          <p class="font-weight-bold mb-0">E-mail:</p>
+                          <p class="org-email">roman.pogrebniak@fidobank.ua</p>
+                          <p class="font-weight-bold mb-0">Телефон:</p>
+                          <p class="org-telephone">(044) 593 00 00</p>
+                          <p class="font-weight-bold mb-0">ЄДРПОУ:</p>
+                          <p class="org-edrpou">14351016</p>
+                          <a href="#" class="link-primary">Всі аукціони організатора</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="publications-type-fa">
+                      <p>Фінансовий актив</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="row no-gutters">
+                  <div class="col-sm-6">
+                    <div class="publications-status mb-4">
+                      <p class="subtitle-secondary mb-2">Статус</p>
+                      <p class="text-success font-weight-bold mb-4">Прийом пропозицій</p>
+                    </div>
+                    <div class="publications-left">
+                      <p class="subtitle-secondary mb-2">Залишилось</p>
+                      <p class="publications-left-time font-weight-bold">11 дн. 1 год. 40 хв.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="publications-starting-price mb-4">
+                      <p class="subtitle-secondary mb-1">Початкова ціна</p>
+                      <p class="publications-starting-price-value font-weight-bold">199 234 175,74 грн.</p>
+                    </div>
+                    <a class="btn btn-primary btn-block mt-3" href="#">Взяти участь</a>
+                    <a href="#" class="btn link-secondary btn-block">Детальніше</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <a href="#" class="btn btn-lg btn-primary btn-block mt-4">Переглянути всі публікації</a>
+        <a href="#" class="btn btn-primary btn-block mt-4">Переглянути всі публікації <img class="ml-2" src="/images/arrow-white.png" alt=""></a>
       </div>
     </section>
     <section class="how-it-works">
       <div class="container">
-        <h2 class="how-it-works-title">Як це працює</h2>
+        <h2 class="how-it-works-title text-center text-sm-left">Як це працює</h2>
         <div class="row no-gutters">
           <div class="col-lg-8">
             <div class="how-it-works-list row no-gutters font-weight-bold">
@@ -310,8 +389,8 @@
               </div>
             </div>
           </div>
-          <aside class="col-lg-4">
-            <div class="register-block">
+          <aside class="d-none d-lg-block col-lg-4">
+            <div class="register-block text-center text-lg-left">
               <h3>Учасникам</h3>
               <p class="mb-4">Купуйте майно банків вигідно.<br> Доступ до всіх аукціонів</p>
               <a href="#" class="btn btn-warning btn-block">Реєстрація учасника</a>
@@ -322,20 +401,34 @@
           </aside>
         </div>
       </div>
+      <div class="register-block d-lg-none text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 col-md-6">
+              <h3>Учасникам</h3>
+              <p class="mb-4">Купуйте майно банків вигідно.<br> Доступ до всіх аукціонів</p>
+              <a href="#" class="btn btn-warning btn-lg btn-block">Реєстрація учасника</a>
+              <h3>Замовникам</h3>
+              <p class="mb-4">Продавайте швидко.<br> Не втрачайте вартість активів</p>
+              <a href="#" class="btn btn-primary btn-lg btn-block">Реєстрація замовника</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="statistics">
       <div class="container">
         <div class="row justify-content-around">
-          <div class="col-md-3">
-            <p><span class="statistics-numbers">100</span> млн. грн.<br> щоденна втрата вартості непроданих активів
+          <div class="col-md-4 col-lg-3">
+            <p class="text-center text-md-left"><span class="statistics-numbers">100</span> млн. грн.<br> щоденна втрата вартості непроданих активів
             </p>
           </div>
-          <div class="col-md-3">
-            <p><span class="statistics-numbers">100</span> млрд. грн.<br> оціночна вартість<br>майна банків
+          <div class="col-md-4 col-lg-3">
+            <p class="text-center text-md-left"><span class="statistics-numbers">100</span> млрд. грн.<br> оціночна вартість<br>майна банків
             </p>
           </div>
-          <div class="col-md-3">
-            <p><span class="statistics-numbers">65</span> банків<br> в стадії ліквідації
+          <div class="col-md-4 col-lg-3">
+            <p class="text-center text-md-left"><span class="statistics-numbers">65</span> банків<br> в стадії ліквідації
             </p>
           </div>
         </div>
@@ -347,47 +440,50 @@
           <div class="col-sm-8 latest-news-title">
             <h2 class="text-left mb-0">Останні новини</h2>
           </div>
-          <div class="col-sm-4 text-sm-right">
-            <a href="#" class="btn btn-outline-primary mb-3">Всі новини</a>
+          <div class="col-sm-4 text-sm-right mt-2">
+            <a href="#" class="btn btn-outline-primary mb-3 d-none d-sm-inline-block">Всі новини</a>
           </div>
         </div>
         <div class="row no-gutters">
-          <div class="col-lg-6">
+          <div class="col-lg-6 mb-4">
             <div class="row no-gutters">
               <div class="col-lg-4 latest-news-thumbnail">
                 <img src="images/img-news-1.jpg" alt="">
               </div>
-              <div class="col-lg-8 latest-news-excerpt pl-3 pr-3">
+              <div class="col-lg-8 latest-news-excerpt mt-2 mt-lg-0 pl-lg-3 pr-lg-3">
                 <h3><a href="#" class="link-primary">В Україні 7 банків залишилися у зоні ризику</a></h3>
                 <p>Dreamcatcher chia before they sold out jianbing fanny pack poutine. Church-key man braid keytar, messenger bag live-edge listicle scenester schlitz cliche leggings tumeric.</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 mb-4">
             <div class="row no-gutters">
               <div class="col-lg-4 latest-news-thumbnail">
                 <img src="images/img-news-2.jpg" alt="">
               </div>
-              <div class="col-lg-8 latest-news-excerpt pl-3 pr-3">
+              <div class="col-lg-8 latest-news-excerpt mt-2 mt-lg-0 pl-lg-3 pr-lg-3">
                 <h3><a href="#" class="link-primary">Мінфін обіцяє більше не капіталізувати державні банки</a></h3>
                 <p>Dreamcatcher chia before they sold out jianbing fanny pack poutine. Church-key man braid keytar, messenger bag live-edge listicle scenester schlitz cliche leggings tumeric.</p>
               </div>
             </div>
           </div>
         </div>
+        <p class="d-sm-none text-center">
+          <a href="#" class="btn btn-outline-primary btn-lg btn-block mb-4">Всі новини</a>
+        </p>
       </div>
     </section>
     <section class="about-us">
       <div class="container">
+        <h2 class="about-us-title mb-4">Про нас</h2>
         <div class="row align-items-center no-gutters">
-          <div class="col-lg-8">
-            <h2 class="about-us-title mb-4">Про нас</h2>
+          <div class="col-lg-8 order-2 order-sm-1">
             <p class="pr-4 mb-4">Перерозподіл бюджету, не змінюючи концепції, викладеної вище, свідомо концентрує споживчий медіамікс, розширюючи частку ринку. Суспільство споживання регулярно індукує емпіричний виставковий стенд. Стратегічне планування відштовхує суспільний
               медійний канал. Виробництво спотворює комплексний рекламний блок. Медіамікс відштовхує бюджет на розміщення. Правда, фахівці відзначають, що портрет споживача синхронізує колективний поведінковий таргетинг.</p>
             <a href="#" class="btn btn-outline-primary mb-3">Детальніше</a>
           </div>
-          <div class="col-lg-4">
-            <img class="img-fluid" src="images/io-centers-2673325_960_720.jpg" alt="">
+          <div class="col-lg-4 order-1 order-sm-2">
+            <img class="img-fluid mb-3" src="images/io-centers-2673325_960_720.jpg" alt="">
           </div>
         </div>
       </div>
@@ -396,23 +492,39 @@
   <footer class="site-footer">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6 align-self-center">
+        <div class="banner-footer col-12 col-lg-6 align-self-center">
           <a href="#"><img class="logo" src="images/logo.png" alt=""></a>
-          <img class="logo-prozorro" src="images/logo-prozorro.png" alt="">
-          <p class="accredit">Акредитований<br>майданчик</p>
+          <img class="logo-prozorro d-none d-sm-inline-block" src="images/logo-prozorro.png" alt="">
+          <p class="accredit d-none d-sm-inline-block">Акредитований<br>майданчик</p>
+          <button type="button" id="miniListCallFooter" class="btn btn-primary d-lg-none float-right mt-2">
+            <img src="/images/menu-icon.png">
+          </button>
+          <nav class="menu-mini-list-footer">
+            <ul class="text-center">
+              <li><a href="/" class="link-primary">Про нас</a></li>
+              <li><a href="#" class="link-primary">Учасникам</a></li>
+              <li><a href="#" class="link-primary">Замовникам</a></li>
+              <li><a href="/publications.html" class="link-primary">Публікації</a></li>
+              <li><a href="/news-catalog.html" class="link-primary">Новини</a></li>
+              <li><a href="#" class="link-primary">Контакти</a></li>
+            </ul>
+            <button type="button" class="menu-mini-close-footer">
+              <img src="/images/icon-close.png" alt="">
+            </button>
+          </nav>
         </div>
-        <div class="col-12 col-md-6 align-self-center text-right">
+        <div class="col-12 col-lg-6 align-self-center text-right d-none d-lg-block">
           <span class="contact-info text-left">
-                <a href="tel:+380508883298">050-888-32-98</a><br>
-                <a href="tel:+380988883298">098-888-32-98</a>
-              </span>
+            <a href="tel:+380508883298">050-888-32-98</a><br>
+            <a href="tel:+380988883298">098-888-32-98</a>
+          </span>
           <span class="contact-info text-left">
-                <a href="tel:+380443337098">044-333-70-98</a><br>
-                <a class="link-primary" href="mailto:info@sets.org.ua">info@sets.org.ua</a>
-              </span>
+            <a href="tel:+380443337098">044-333-70-98</a><br>
+            <a class="link-primary" href="mailto:info@sets.org.ua">info@sets.org.ua</a>
+          </span>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+      <nav class="navbar navbar-expand-lg navbar-light bg-secondary d-none d-lg-flex">
         <div class="container">
           <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#top-menu" aria-controls="top-menu" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -458,19 +570,43 @@
           </div>
         </div>
       </nav>
+      <div style="padding: 30px 0 0; border-top: 1px solid #dcdde0; border-bottom: 1px solid #dcdde0" class="contact-info-mini text-center mt-3 d-lg-none">
+        <p><a href="tel:+380443337098">044-333-70-98</a></p>
+        <p><a href="tel:+380508883298">050-888-32-98</a></p>
+        <p><a href="tel:+380988883298">098-888-32-98</a></p>
+        <p><a href="mailto:info@sets.org.ua">info@sets.org.ua</a></p>
+        <ul class="navbar-nav flex-row social justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="images/vk-2.png" alt="">
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="images/fb-2.png" alt="">
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img src="images/g.png" alt="">
+              </a>
+          </li>
+        </ul>
+      </div>
       <div class="copyright mt-2">
         <div class="row">
-          <div class="col">
+          <div class="col d-none d-lg-block">
             <p>&copy; 2017, <a class="link-copyright" href="#">sets.org.ua</a></p>
           </div>
-          <div class="col text-right">Сайт зроблено — <a href="#" class="link-copyright">«React Logic»</a></div>
+          <div class="col text-center text-lg-right">Сайт зроблено — <a href="#" class="link-copyright">«React Logic»</a></div>
         </div>
       </div>
     </div>
   </footer>
 </body>
 <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- Bootstrap.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>

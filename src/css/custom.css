@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Exo+2:400,500,700&subset=cyrillic");
-@media (min-width: 1260px) {
-  .container {
-    max-width: 1230px; } }
-
 .btn-signin {
   padding-top: 8px;
   padding-right: 20px;
@@ -24,14 +20,18 @@
   .btn-primary:hover {
     background-color: #818cce;
     border-color: #818cce; }
-  .btn-primary:focus {
+  .btn-primary:focus, .btn-primary:active {
+    background-color: #818cce;
+    border-color: #818cce;
     box-shadow: inset 0 -3px 0 #5c6bc0; }
 
 .btn-warning:hover {
   background-color: #ffce3a;
   border-color: #ffce3a; }
 
-.btn-warning:focus {
+.btn-warning:focus, .btn-warning:active {
+  background-color: #ffce3a;
+  border-color: #ffce3a;
   box-shadow: inset 0 -3px 0 #fec107; }
 
 .btn-outline-primary {
@@ -94,6 +94,7 @@ h4 {
   padding-left: 0; }
 
 .banner {
+  position: relative;
   min-height: 80px; }
 
 .logo-prozorro {
@@ -117,6 +118,78 @@ h4 {
   .contact-info a[href^="tel:"] {
     color: #222222;
     text-decoration: none; }
+  .contact-info-mini {
+    padding: 40px 0; }
+    .contact-info-mini a[href^="tel:"] {
+      color: #222222;
+      text-decoration: none; }
+
+.menu-mini-reg, .menu-mini-list {
+  position: fixed;
+  display: none;
+  background-color: #fff;
+  padding-top: 60px;
+  padding-right: 15px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  top: 0;
+  width: 100%;
+  z-index: 100; }
+
+.menu-mini-list {
+  padding-top: 40px;
+  padding-right: 0;
+  padding-bottom: 40px;
+  padding-left: 0;
+  width: 50%;
+  right: 0;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25); }
+  .menu-mini-list ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-bottom: 1px solid #dcdde0; }
+    .menu-mini-list ul li {
+      margin-bottom: 30px; }
+      .menu-mini-list ul li a {
+        font-size: 18px; }
+  .menu-mini-list-footer {
+    position: fixed;
+    display: none;
+    background-color: #f0f1f2;
+    padding-top: 60px;
+    padding-right: 15px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    z-index: 100;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25); }
+    .menu-mini-list-footer ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+      .menu-mini-list-footer ul li {
+        margin-bottom: 30px; }
+        .menu-mini-list-footer ul li a {
+          font-size: 18px; }
+
+.menu-mini-close {
+  position: absolute;
+  background-color: #fff;
+  top: 30px;
+  right: 30px;
+  border: 0; }
+  .menu-mini-close-footer {
+    position: absolute;
+    background-color: #f0f1f2;
+    top: 30px;
+    right: 30px;
+    border: 0; }
+
+.menu-mini-title {
+  margin-bottom: 30px; }
 
 .overlay {
   position: absolute;
@@ -163,6 +236,8 @@ h4 {
     padding-bottom: 12px;
     padding-left: 40px;
     border: 1px solid #dcdde0; }
+  .publications-overlapped {
+    margin-top: calc(-117px - 1rem); }
   .publications-item {
     background-color: #fff;
     padding-top: 35px;
@@ -243,11 +318,11 @@ h4 {
 .register-block {
   background-color: #f0f1f2;
   display: inline-block;
-  width: 100%;
+  min-width: 100%;
   padding-top: 7px;
-  padding-right: 73px !important;
+  padding-right: 3.8vw !important;
   padding-bottom: 70px;
-  padding-left: 73px !important; }
+  padding-left: 3.8vw !important; }
   .register-block h3 {
     margin-top: 45px; }
   .register-block p {
@@ -270,9 +345,9 @@ h4 {
 
 .latest-news {
   background-color: #f0f1f2;
-  padding-top: 100px;
+  padding-top: 5.2vw;
   padding-right: 0;
-  padding-bottom: 100px;
+  padding-bottom: 5.2vw;
   padding-left: 0; }
   .latest-news-thumbnail {
     background-size: cover !important;
@@ -413,8 +488,7 @@ h4 {
 
 .copyright {
   color: #c6cacc;
-  padding-top: 14px;
-  border-top: 1px solid; }
+  padding-top: 14px; }
 
 .faq-item {
   position: relative;
@@ -493,6 +567,8 @@ Readjusted Bootstrap Jumbotron Styles
 .jumbotron {
   position: relative;
   background: url("../images/img-main-screen.jpg");
+  background-size: cover;
+  background-position: center;
   min-height: 512px;
   margin: 0;
   border-radius: 0; }
@@ -521,3 +597,101 @@ Readjusted Bootstrap Nav Tabs Styles
    --------------------------------------- */
 .table thead th {
   vertical-align: middle; }
+
+@media (min-width: 1260px) {
+  .container {
+    max-width: 1230px; } }
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 50px; }
+  h2 {
+    font-size: 40px; }
+  .banner .container, .publications .container, .site-footer .container {
+    max-width: 100%; }
+  .jumbotron-factoid {
+    padding-top: 18px;
+    padding-right: 15px;
+    padding-bottom: 18px;
+    padding-left: 15px;
+    border-left: 0; }
+  .publications-overlapped {
+    margin-top: 0; }
+  .how-it-works {
+    margin-bottom: 0;
+    padding: 0; }
+  .social .nav-link {
+    padding-top: 0;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px; } }
+
+@media (max-width: 767px) {
+  .statistics-numbers {
+    display: block; } }
+
+@media (max-width: 575px) {
+  h1, h2 {
+    font-size: 30px; }
+  .menu-mini-list {
+    width: 100%;
+    height: 100%; }
+    .menu-mini-list ul li {
+      margin-bottom: 12px; }
+    .menu-mini-list-footer {
+      position: fixed;
+      display: none;
+      background-color: #f0f1f2;
+      padding-top: 60px;
+      padding-right: 15px;
+      padding-bottom: 60px;
+      padding-left: 15px;
+      height: 100%;
+      bottom: 0;
+      width: 100%;
+      z-index: 100; }
+      .menu-mini-list-footer ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none; }
+        .menu-mini-list-footer ul li {
+          margin-bottom: 30px; }
+          .menu-mini-list-footer ul li a {
+            font-size: 18px; }
+  .jumbotron {
+    padding-top: 60px;
+    padding-right: 0;
+    padding-bottom: 60px;
+    padding-left: 0; }
+    .jumbotron-subtitle {
+      font-size: 22px;
+      line-height: 1; }
+    .jumbotron-factoid h4 {
+      font-size: 1rem; }
+  .publications-search {
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-bottom: 12px;
+    padding-left: 15px; }
+  .publications-item {
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-bottom: 12px;
+    padding-left: 15px; }
+  .how-it-works-list-description {
+    padding-left: 55px;
+    padding-right: 15px; }
+    .how-it-works-list-description:before {
+      left: 015px; }
+  .latest-news-title {
+    margin-top: 32px;
+    margin-bottom: 40px; }
+  .about-us {
+    padding-top: 70px;
+    padding-right: 0;
+    padding-bottom: 70px;
+    padding-left: 0; } }
+
+@media (max-height: 568px) {
+  .jumbotron {
+    min-height: calc(100vh - 80px); } }

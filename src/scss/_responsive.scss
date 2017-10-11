@@ -1,9 +1,163 @@
-@media (min-width: 320px) {
-  
-}
-
 @media (min-width: 1260px) {
   .container {
     max-width: 1230px;
+  }
+}
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+  .banner, .publications, .site-footer {
+    .container {
+      max-width: 100%;
+    }
+  }
+  .jumbotron {
+    &-factoid {
+      @include padding(18px, 15px, 18px, 15px);
+      border-left: 0;
+    }
+  }
+
+  .publications {
+    &-overlapped {
+      margin-top: 0;
+    }
+  }
+
+  .how-it-works {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .social {
+    .nav {
+      &-link {
+        @include padding(0, 10px, 20px, 10px);
+      }
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+  // .jumbotron {
+  //   &-subtitle {
+  //     font-size: 26px;
+  //   }
+  // }
+  .statistics {
+    &-numbers {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  h1, h2 {
+    font-size: 30px;
+  }
+
+  .menu {
+    &-mini {
+      &-list {
+        width: 100%;
+        height: 100%;
+        ul {
+          li {
+            margin-bottom: 12px;
+          }
+        }
+        &-footer {
+          position: fixed;
+          display: none;
+          background-color: $secondary-color;
+          @include padding(60px, 15px, 60px, 15px);
+          height: 100%;
+          bottom: 0;
+          width: 100%;
+          z-index: 100;
+          ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            li {
+              margin-bottom: 30px;
+              a {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .jumbotron {
+    @include padding(60px, 0, 60px, 0);
+    &-subtitle {
+      font-size: 22px;
+      line-height: 1;
+    }
+    &-factoid {
+      h4 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .publications {
+    &-search {
+      @include padding(30px, 15px, 12px, 15px);
+    }
+    &-item {
+      @include padding(30px, 15px, 12px, 15px);
+    }
+  }
+
+  .how-it-works {
+
+    &-list {
+
+      &-description {
+        padding-left: 55px;
+        padding-right: 15px;
+
+        &:before {
+          left: 015px;
+        }
+      }
+    }
+  }
+
+  .latest {
+    &-news {
+      &-title {
+        margin-top: 32px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .about {
+    &-us {
+      @include padding(70px, 0, 70px, 0);
+      &-title {
+        // margin-top: 32px;
+        // margin-bottom: 40px;
+      }
+    }
+  }
+
+}
+
+@media (max-height: 568px) {
+  .jumbotron {
+    min-height: calc(100vh - 80px);
   }
 }

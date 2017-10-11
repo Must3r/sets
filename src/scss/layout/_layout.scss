@@ -30,6 +30,7 @@ h4 {
 }
 
 .banner {
+  position: relative;
   min-height: 80px;
 }
 
@@ -57,6 +58,85 @@ h4 {
   a[href^="tel:"] {
     color: $primary-text-color;
     text-decoration: none;
+  }
+
+  &-mini {
+    padding: 40px 0;
+    a[href^="tel:"] {
+      color: $primary-text-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.menu {
+  &-mini {
+    &-reg, &-list {
+      position: fixed;
+      display: none;
+      background-color: $reverse-color;
+      @include padding(60px, 15px, 60px, 15px);
+      top: 0;
+      width: 100%;
+      z-index: 100;
+    }
+    &-list {
+      @include padding(40px, 0, 40px, 0);
+      width: 50%;
+      right:0;
+      box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        border-bottom: 1px solid $border-color-light;
+        li {
+          margin-bottom: 30px;
+          a {
+            font-size: 18px;
+          }
+        }
+      }
+      &-footer {
+        position: fixed;
+        display: none;
+        background-color: $secondary-color;
+        @include padding(60px, 15px, 60px, 15px);
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        z-index: 100;
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          li {
+            margin-bottom: 30px;
+            a {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    &-close {
+      position: absolute;
+      background-color: $reverse-color;
+      top: 30px;
+      right: 30px;
+      border: 0;
+      &-footer {
+        position: absolute;
+        background-color: $secondary-color;
+        top: 30px;
+        right: 30px;
+        border: 0;
+      }
+    }
+    &-title {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -113,6 +193,10 @@ h4 {
     background-color: $secondary-color;
     @include padding(30px, 40px, 12px, 40px);
     border: 1px solid $border-color-light;
+  }
+
+  &-overlapped {
+    margin-top: calc(-117px - 1rem);
   }
 
   &-item {
@@ -222,8 +306,8 @@ h4 {
   &-block {
     background-color: $secondary-color;
     display: inline-block;
-    width: 100%;
-    @include padding(7px, 73px !important, 70px, 73px !important);
+    min-width: 100%;
+    @include padding(7px, 3.8vw !important, 70px, 3.8vw !important);
 
     h3 {
       margin-top: 45px;
@@ -255,7 +339,7 @@ h4 {
 .latest {
   &-news {
     background-color: $secondary-color;
-    @include padding(100px, 0, 100px, 0);
+    @include padding(5.2vw, 0, 5.2vw, 0);
 
     &-thumbnail {
       background-size: cover !important;
@@ -395,7 +479,7 @@ h4 {
 .copyright {
   color: $secondary-text-color;
   padding-top: 14px;
-  border-top: 1px solid;
+  // border-top: 1px solid;
 }
 
 .faq {
@@ -502,6 +586,8 @@ Readjusted Bootstrap Jumbotron Styles
 .jumbotron {
   position: relative;
   background: url('../images/img-main-screen.jpg');
+  background-size: cover;
+  background-position: center;
   min-height: 512px;
   margin: 0;
   border-radius: 0;
