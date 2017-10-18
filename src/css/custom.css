@@ -67,9 +67,14 @@
   color: #c6cacc; }
 
 body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
   font-family: 'Exo 2', sans-serif;
   color: #222222;
-  font-size: 16px; }
+  font-size: 16px;
+  height: 100vh; }
 
 h1 {
   font-size: 3.5rem;
@@ -85,6 +90,10 @@ h3 {
 
 h4 {
   font-size: 18px; }
+
+.site-content {
+  -ms-flex: 1;
+  flex: 1; }
 
 .site-footer {
   background-color: #f0f1f2;
@@ -506,6 +515,27 @@ h4 {
     border-bottom: 1px solid #dcdde0; }
   .faq-item-header {
     margin-bottom: 20px; }
+
+.registration-block {
+  background-color: #f0f1f2;
+  margin-top: 30px;
+  padding-top: 40px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  padding-left: 30px; }
+
+.custom-addon {
+  position: relative;
+  background-color: #fff;
+  border-left: 0 !important;
+  color: #4470b2; }
+  .custom-addon:hover:after {
+    position: absolute;
+    left: 12.5%;
+    bottom: 8px;
+    width: 75%;
+    content: "";
+    border-bottom: 1px dashed; }
 
 /* ---------------------------------------
     Readjusted Bootstrap Navs Styles
