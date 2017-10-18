@@ -519,10 +519,13 @@ h4 {
 .registration-block {
   background-color: #f0f1f2;
   margin-top: 30px;
+  margin-bottom: 60px;
   padding-top: 40px;
   padding-right: 30px;
   padding-bottom: 40px;
   padding-left: 30px; }
+  .registration-block .form-check-label {
+    font-size: 14px; }
 
 .custom-addon {
   position: relative;
@@ -536,6 +539,15 @@ h4 {
     width: 75%;
     content: "";
     border-bottom: 1px dashed; }
+
+.custom-radio {
+  background-color: #fff;
+  border: 1px solid #c6cacc; }
+  .custom-radio.active {
+    background-color: #5c6bc0;
+    color: #fff; }
+    .custom-radio.active:focus, .custom-radio.active.focus {
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.25); }
 
 /* ---------------------------------------
     Readjusted Bootstrap Navs Styles

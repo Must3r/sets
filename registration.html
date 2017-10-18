@@ -132,29 +132,70 @@
   <main class="site-content">
     <section class="registration">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="registration-block col-10 col-lg-6">
+        <div class="row">
+          <div class="col-md-12 col-xl-9 registration-block">
             <div class="row justify-content-center">
-              <div class="col-10">
-                <h3 class="mb-4">Вхід в особистий кабінет</h3>
+              <div class="col-9">
+                <h3 class="mb-4">Реєстрація нового користувача</h3>
                 <form>
+
                   <div class="form-group row">
-                    <label for="loginEmail" class="col-sm-2 col-form-label">E-mail</label>
-                    <div class="col-sm-10">
-                      <input type="email" class="form-control" id="loginEmail" placeholder="">
+                    <label class="col-md-4 col-form-label">Роль користувача</label>
+                    <div class="col-md-6 btn-group" data-toggle="buttons">
+                      <label class="btn custom-radio active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Учасник
+                </label>
+                      <label class="btn custom-radio">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> Організатор
+                </label>
                     </div>
                   </div>
+
                   <div class="form-group row">
-                    <label for="loginPassword" class="col-sm-2 col-form-label">Пароль</label>
-                    <div class="col-sm-10 input-group">
-                      <input type="password" style="border-right:0;" class="form-control" id="loginPassword" placeholder="">
-                      <a href="#" class="input-group-addon custom-addon">нагадати</a>
+                    <label for="signUpEmail" class="col-md-4 col-form-label">E-mail</label>
+                    <div class="col-md-6">
+                      <input type="email" class="form-control" id="signUpEmail" placeholder="">
                     </div>
                   </div>
-                  <div class="row align-items-center">
-                    <div class="col mt-3 text-center">
-                      <input class="btn btn-primary" type="submit" value="Увійти">
-                      <a class="link-primary ml-1 ml-sm-2 ml-md-4" href="#">Реєстрація</a>
+
+                  <div class="form-group row">
+                    <label for="signUpName" class="col-md-4 col-form-label">Ім'я користувача</label>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" id="signUpName" placeholder="Латиницею, без спецсимволів">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="signUpPassword" class="col-md-4 col-form-label">Пароль</label>
+                    <div class="col-md-6 input-group">
+                      <input type="password" class="form-control" id="signUpPassword">
+                      <button type="button" class="input-group-addon">
+                        <img src="../images/password-off.png">
+                        <!-- <i class="fa fa-eye-slash" aria-hidden="true"></i> -->
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="signUpRepeatPassword" class="col-md-4 col-form-label">Повтор паролю</label>
+                    <div class="col-md-6 input-group">
+                      <input type="password" class="form-control" id="signUpRepeatPassword">
+                      <button type="button" class="input-group-addon">
+                        <img src="../images/password-on.png">
+                        <!-- <i class="fa fa-eye" aria-hidden="true"></i> -->
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="form-group row justify-content-end">
+                    <div class="col-lg-8">
+                      <div class="form-check mb-4">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input">
+                          Я ознайомлений та погоджуюсь з <a class="link-primary" href="#">Правилами</a> проведення торгів, <a class="link-primary" href="#">Політикою конфіденційності</a> і <a class="link-primary" href="#">Договором оферти</a>
+                        </label>
+                      </div>
+                      <input type="submit" class="btn btn-warning" value="Зареєструватися">
                     </div>
                   </div>
                 </form>
