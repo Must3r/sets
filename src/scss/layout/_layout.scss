@@ -9,7 +9,6 @@ body {
   font-size: 16px;
   height: 100vh;
 }
-
 @for $i from 1 through 3 {
   h#{$i} {
     font-size: 3.5rem - ($i - 1);
@@ -25,7 +24,7 @@ h4 {
   &-header {}
 
   &-content {
-    flex:1;
+    flex: 1;
   }
 
   &-footer {
@@ -67,6 +66,7 @@ h4 {
 
   &-mini {
     padding: 40px 0;
+
     a[href^="tel:"] {
       color: $primary-text-color;
       text-decoration: none;
@@ -76,7 +76,8 @@ h4 {
 
 .menu {
   &-mini {
-    &-reg, &-list {
+    &-list,
+    &-reg {
       position: fixed;
       display: none;
       background-color: $reverse-color;
@@ -85,23 +86,28 @@ h4 {
       width: 100%;
       z-index: 100;
     }
+
     &-list {
       @include padding(40px, 0, 40px, 0);
       width: 50%;
-      right:0;
-      box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+      right: 0;
+      box-shadow: 0 0 15px 0 rgba(0,0,0,0.25);
+
       ul {
         margin: 0;
         padding: 0;
         list-style-type: none;
         border-bottom: 1px solid $border-color-light;
+
         li {
           margin-bottom: 30px;
+
           a {
             font-size: 18px;
           }
         }
       }
+
       &-footer {
         position: fixed;
         display: none;
@@ -111,13 +117,16 @@ h4 {
         right: 0;
         width: 50%;
         z-index: 100;
-        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+        box-shadow: 0 0 15px 0 rgba(0,0,0,0.25);
+
         ul {
           margin: 0;
           padding: 0;
           list-style-type: none;
+
           li {
             margin-bottom: 30px;
+
             a {
               font-size: 18px;
             }
@@ -125,12 +134,14 @@ h4 {
         }
       }
     }
+
     &-close {
       position: absolute;
       background-color: $reverse-color;
       top: 30px;
       right: 30px;
       border: 0;
+
       &-footer {
         position: absolute;
         background-color: $secondary-color;
@@ -139,6 +150,7 @@ h4 {
         border: 0;
       }
     }
+
     &-title {
       margin-bottom: 30px;
     }
@@ -264,6 +276,7 @@ h4 {
     color: $primary-color;
     font-weight: normal;
   }
+
   &-secondary {
     color: $secondary-text-color-dark;
     font-weight: normal;
@@ -371,20 +384,24 @@ h4 {
 
 .lot {
   @include padding(60px, 0, 100px, 0);
+
   &-title {
     font-weight: normal;
   }
+
   &-info {
-    position:sticky;
-    top:50px;
+    position: sticky;
+    top: 50px;
     background-color: $secondary-color;
     @include padding(40px, 40px, 40px, 40px);
   }
+
   &-subdescription {
     background-color: $secondary-color;
     padding: 5px;
     @include subtitle-secondary;
   }
+
   &-doc {
     padding-left: 72px;
     @each $type in doc, txt, jpg, png, xls, pdf, href, default {
@@ -399,15 +416,18 @@ h4 {
 
 .news {
   margin-bottom: 90px;
+
   &-title {
     margin-top: 60px;
     margin-bottom: 40px;
   }
+
   &-item {
     position: relative;
     padding-bottom: 45px;
     margin-bottom: 41px;
-    &:after{
+
+    &:after {
       position: absolute;
       content: " ";
       left: 15px;
@@ -415,10 +435,12 @@ h4 {
       width: calc(100% - 30px);
       border-bottom: 1px solid $border-color-light;
     }
+
     &-title {
       a {
         font-weight: normal;
         color: $primary-text-color;
+
         &:hover {
           color: $primary-link-color;
           border-bottom: 1px solid;
@@ -426,29 +448,35 @@ h4 {
       }
     }
   }
+
   &-post {
     position: relative;
     @include padding(60px, 0, 150px, 0);
+
     &-content {
       padding-bottom: 60px;
+
       &:after {
         position: absolute;
-        left: 15px ;
+        left: 15px;
         bottom: 0;
         content: " ";
         width: calc(100% - 30px);
         border-bottom: 1px solid $border-color-light;
       }
     }
+
     &-title {
       margin-bottom: 20px;
       font-weight: normal;
     }
+
     &-image {
       margin-top: 30px;
       margin-bottom: 50px;
     }
   }
+
   &-date {
     background: url('../images/icon-calendar.png');
     background-repeat: no-repeat;
@@ -465,13 +493,16 @@ h4 {
       // top:50px;
       list-style-type: none;
     }
+
     &-title {
       margin-bottom: 40px;
       font-weight: bold;
       line-height: 22px;
     }
+
     &-item {
       margin-bottom: 40px;
+
       p {
         a {
           color: $primary-text-color;
@@ -492,6 +523,7 @@ h4 {
     position: relative;
     @include padding(20px, 40px, 20px, 40px);
     margin-bottom: 40px;
+
     &:after {
       position: absolute;
       content: " ";
@@ -500,6 +532,7 @@ h4 {
       width: 60%;
       border-bottom: 1px solid $border-color-light;
     }
+
     &-header {
       margin-bottom: 20px;
     }
@@ -512,6 +545,7 @@ h4 {
     margin-top: 30px;
     margin-bottom: 60px;
     @include padding(40px, 30px, 40px, 30px);
+
     .form-check-label {
       font-size: 14px;
     }
@@ -524,6 +558,7 @@ h4 {
     background-color: $reverse-color;
     border-left: 0 !important;
     color: $primary-link-color;
+
     &:hover {
       &:after {
         position: absolute;
@@ -535,15 +570,81 @@ h4 {
       }
     }
   }
+
   &-radio {
     background-color: $reverse-color;
-    border:1px solid $border-color-dark;
+    border: 1px solid $border-color-dark;
+
     &.active {
       background-color: $primary-color;
       color: $reverse-color;
-      &:focus, &.focus {
+
+      &.focus,
+      &:focus {
         box-shadow: inset 0 0 20px rgba(0,0,0,.25);
       }
+    }
+  }
+
+  &-file {
+    background-color: $reverse-color;
+    width: 100%;
+    border-radius: .25rem;
+    overflow: hidden;
+    &-input {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+
+    //   & + label {
+    //     font-size: 1.25em;
+    //     font-weight: 700;
+    //     color: white;
+    //     background-color: black;
+    //     display: inline-block;
+    //   }
+    //
+    //   & + label:hover,
+    //   &:focus + label {
+    //     background-color: red;
+    //   }
+    }
+
+    &-button {
+      position: absolute;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flex;
+      display: inline-flex;
+      align-items: center;
+      background-color: $primary-color;
+      padding: 1rem;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      color: $reverse-text-color;
+      cursor: pointer;
+      border-top-right-radius: .25rem;
+      border-bottom-right-radius: .25rem;
+      transition: box-shadow .2s ease;
+      &:focus, &:active {
+        box-shadow: inset 0 0 20px rgba(0,0,0,.25);
+      }
+    }
+
+    &-string {
+      width: 100%;
+      height: 100%;
+      padding-left: 1rem;
+      border: 1px solid $border-color-dark;
+      border-radius: .25rem;
+      white-space: nowrap;
+    }
+
+    &-clear {
+      display: none;
     }
   }
 }
@@ -648,9 +749,11 @@ Readjusted Bootstrap Pagination Styles
   .page {
     &-item {
       border-color: $primary-color;
+
       a {
         color: $primary-color;
       }
+
       &.active {
         a {
           background-color: $primary-color;
@@ -660,7 +763,6 @@ Readjusted Bootstrap Pagination Styles
     }
   }
 }
-
 /* --------------------------------
 Readjusted Bootstrap Nav Tabs Styles
 ---------------------------------- */
@@ -675,8 +777,6 @@ Readjusted Bootstrap Nav Tabs Styles
     }
   }
 }
-
-
 /* ---------------------------------------
     Readjusted Bootstrap Table Styles
    --------------------------------------- */
