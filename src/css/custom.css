@@ -74,7 +74,7 @@ body {
   font-family: 'Exo 2', sans-serif;
   color: #222222;
   font-size: 16px;
-  height: 100vh; }
+  min-height: 100vh; }
 
 h1 {
   font-size: 3.5rem;
@@ -631,6 +631,7 @@ h4 {
    --------------------------------------- */
 .bg-primary {
   background-color: #5c6bc0 !important;
+  min-height: 51px;
   padding-top: 0;
   padding-right: 0;
   padding-bottom: 0;
