@@ -29,36 +29,36 @@
     });
   });
 }(document, window, 0));
-
-var fileInputLicense = document.getElementById('signUpLicense');
-var clearLicense = document.getElementById('signUpLicenseClear');
-fileInputLicense.onchange = function() {
-  if (fileInputLicense.files.length > 0) {
-    clearLicense.style.display = "block";
-  } else {
-    clearLicense.style.display = "none";
-  }
-};
-
-var fileInputResolution = document.getElementById('signUpResolution');
-var clearResolution = document.getElementById('signUpResolutionClear');
-fileInputResolution.onchange = function() {
-  if (fileInputResolution.files.length > 0) {
-    clearResolution.style.display = "block";
-  } else {
-    clearResolution.style.display = "none";
-  }
-};
-
-var fileInputOther = document.getElementById('signUpOther');
-var clearOther = document.getElementById('signUpOtherClear');
-fileInputOther.onchange = function() {
-  if (fileInputOther.files.length > 0) {
-    clearOther.style.display = "block";
-  } else {
-    clearOther.style.display = "none";
-  }
-};
+// 
+// var fileInputLicense = document.getElementById('signUpLicense');
+// var clearLicense = document.getElementById('signUpLicenseClear');
+// fileInputLicense.onchange = function() {
+//   if (fileInputLicense.files.length > 0) {
+//     clearLicense.style.display = "block";
+//   } else {
+//     clearLicense.style.display = "none";
+//   }
+// };
+//
+// var fileInputResolution = document.getElementById('signUpResolution');
+// var clearResolution = document.getElementById('signUpResolutionClear');
+// fileInputResolution.onchange = function() {
+//   if (fileInputResolution.files.length > 0) {
+//     clearResolution.style.display = "block";
+//   } else {
+//     clearResolution.style.display = "none";
+//   }
+// };
+//
+// var fileInputOther = document.getElementById('signUpOther');
+// var clearOther = document.getElementById('signUpOtherClear');
+// fileInputOther.onchange = function() {
+//   if (fileInputOther.files.length > 0) {
+//     clearOther.style.display = "block";
+//   } else {
+//     clearOther.style.display = "none";
+//   }
+// };
 
 jQuery(document).ready(function() {
   $('.popover-trigger').webuiPopover({
