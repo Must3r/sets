@@ -826,7 +826,7 @@ Readjusted Bootstrap Nav Tabs Styles
   vertical-align: middle;
 }
 
-/* CONTACTS page */
+/* CONTACTS page styles */
 .contacts {
   &-texarea {
     resize: none;
@@ -841,7 +841,7 @@ Readjusted Bootstrap Nav Tabs Styles
     width: 100%;
     padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
 }
-.iframe-container > *{
+.iframe-container > iframe{
     display: block;
     position: absolute;
     top: 0;
@@ -852,4 +852,19 @@ Readjusted Bootstrap Nav Tabs Styles
     padding: 0;
     height: 100%;
     width: 100%;
+}
+
+/* AUCTION DETAIL page styles */
+
+.auction-detail {
+  margin-bottom: 145px;
+  &-number {
+    font-size: 27px;
+    font-weight: 700;  
+  }
+  &-back-arrow{
+    padding-left: 20px;
+    background: url('../images/arrow.png') no-repeat 0 50%;
+    
+  }
 }
