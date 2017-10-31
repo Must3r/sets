@@ -724,7 +724,9 @@ h4 {
   }
 }
 
-.auctions {
+.auctions,
+.bids,
+.messages {
   @include padding(0, 0, 100px, 0);
   &-header {
     @include padding(40px, 0, 40px, 0);

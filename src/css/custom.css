@@ -649,17 +649,23 @@ h4 {
 .office-header {
   background-color: #f0f1f2; }
 
-.auctions {
+.auctions,
+.bids,
+.messages {
   padding-top: 0;
   padding-right: 0;
   padding-bottom: 100px;
   padding-left: 0; }
-  .auctions-header {
+  .auctions-header,
+  .bids-header,
+  .messages-header {
     padding-top: 40px;
     padding-right: 0;
     padding-bottom: 40px;
     padding-left: 0; }
-  .auctions-control-edit {
+  .auctions-control-edit,
+  .bids-control-edit,
+  .messages-control-edit {
     background-image: url("../images/edit.png");
     background-repeat: no-repeat;
     background-position: 15px center;
@@ -667,7 +673,9 @@ h4 {
     padding-right: 15px !important;
     padding-bottom: 10px;
     padding-left: 46px !important; }
-  .auctions-control-publish {
+  .auctions-control-publish,
+  .bids-control-publish,
+  .messages-control-publish {
     background-image: url("../images/publish.png");
     background-repeat: no-repeat;
     background-position: 15px center;
@@ -675,7 +683,9 @@ h4 {
     padding-right: 15px !important;
     padding-bottom: 10px;
     padding-left: 46px !important; }
-  .auctions-control-copy {
+  .auctions-control-copy,
+  .bids-control-copy,
+  .messages-control-copy {
     background-image: url("../images/copy.png");
     background-repeat: no-repeat;
     background-position: 15px center;
@@ -683,7 +693,9 @@ h4 {
     padding-right: 15px !important;
     padding-bottom: 10px;
     padding-left: 46px !important; }
-  .auctions-control-trash {
+  .auctions-control-trash,
+  .bids-control-trash,
+  .messages-control-trash {
     background-image: url("../images/trash.png");
     background-repeat: no-repeat;
     background-position: 15px center;
@@ -691,20 +703,34 @@ h4 {
     padding-right: 15px !important;
     padding-bottom: 10px;
     padding-left: 46px !important; }
-  .auctions-list {
+  .auctions-list,
+  .bids-list,
+  .messages-list {
     font-size: 14px; }
-    .auctions-list thead {
+    .auctions-list thead,
+    .bids-list thead,
+    .messages-list thead {
       background-color: #f0f1f2; }
-    .auctions-list label {
+    .auctions-list label,
+    .bids-list label,
+    .messages-list label {
       white-space: nowrap; }
-    .auctions-list .form-check {
+    .auctions-list .form-check,
+    .bids-list .form-check,
+    .messages-list .form-check {
       position: relative; }
-      .auctions-list .form-check-input {
+      .auctions-list .form-check-input,
+      .bids-list .form-check-input,
+      .messages-list .form-check-input {
         position: absolute;
         opacity: 0; }
-  .auctions-item-menu {
+  .auctions-item-menu,
+  .bids-item-menu,
+  .messages-item-menu {
     padding: 0; }
-    .auctions-item-menu a {
+    .auctions-item-menu a,
+    .bids-item-menu a,
+    .messages-item-menu a {
       display: block;
       padding-top: 15px;
       padding-right: 24px;
@@ -712,7 +738,9 @@ h4 {
       padding-left: 24px;
       font-size: 14px;
       color: #222222; }
-      .auctions-item-menu a:hover {
+      .auctions-item-menu a:hover,
+      .bids-item-menu a:hover,
+      .messages-item-menu a:hover {
         background-color: #f0f1f2; }
 
 /* ---------------------------------------
