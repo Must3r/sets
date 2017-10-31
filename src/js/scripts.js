@@ -65,6 +65,11 @@ jQuery(document).ready(function() {
     animation: 'pop'
   });
 
+  $('.popover-menu').webuiPopover({
+    placement: 'right-bottom',
+    animation: 'pop'
+  });
+
   $('#miniRegCall').on('click', function() {
     $('.menu-mini-reg').slideToggle(300);
   })

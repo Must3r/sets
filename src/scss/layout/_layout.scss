@@ -8,7 +8,6 @@ body {
   color: $primary-text-color;
   font-size: 16px;
 }
-
 @for $i from 1 through 3 {
   h#{$i} {
     font-size: 3.5rem - ($i - 1);
@@ -232,7 +231,7 @@ h4 {
     margin-bottom: 10px;
 
     &-info {
-      padding: 10px;
+      padding: 20px;
     }
   }
 
@@ -589,8 +588,9 @@ h4 {
   &-file {
     background-color: $reverse-color;
     width: 100%;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     overflow: hidden;
+
     &-input {
       width: 0.1px;
       height: 0.1px;
@@ -598,19 +598,18 @@ h4 {
       overflow: hidden;
       position: absolute;
       z-index: -1;
-
-    //   & + label {
-    //     font-size: 1.25em;
-    //     font-weight: 700;
-    //     color: white;
-    //     background-color: black;
-    //     display: inline-block;
-    //   }
-    //
-    //   & + label:hover,
-    //   &:focus + label {
-    //     background-color: red;
-    //   }
+      //   & + label {
+      //     font-size: 1.25em;
+      //     font-weight: 700;
+      //     color: white;
+      //     background-color: black;
+      //     display: inline-block;
+      //   }
+      //
+      //   & + label:hover,
+      //   &:focus + label {
+      //     background-color: red;
+      //   }
     }
 
     &-button {
@@ -626,10 +625,12 @@ h4 {
       bottom: 0;
       color: $reverse-text-color;
       cursor: pointer;
-      border-top-right-radius: .25rem;
-      border-bottom-right-radius: .25rem;
-      transition: box-shadow .2s ease;
-      &:focus, &:active {
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+      transition: box-shadow 0.2s ease;
+
+      &:active,
+      &:focus {
         box-shadow: inset 0 0 20px rgba(0,0,0,.25);
       }
     }
@@ -639,7 +640,7 @@ h4 {
       height: 100%;
       padding-left: 1rem;
       border: 1px solid $border-color-dark;
-      border-radius: .25rem;
+      border-radius: 0.25rem;
       white-space: nowrap;
     }
 
@@ -647,14 +648,41 @@ h4 {
       display: none;
     }
   }
-}
 
+  &-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border: 1px solid $secondary-text-color;
+    border-radius: 2px;
+
+    .form-check-input:checked ~ & {
+      background-color: $primary-color;
+      background-image: url('../images/check.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      border-color: $primary-color;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      .form-check-input:checked ~ & {
+        display: block;
+      }
+    }
+  }
+}
 /*custom select*/
 .form-sel {
   width: 100%;
   height: 100%;
   position: relative;
-  &:before{
+
+  &:before {
     content: "";
     display: block;
     width: 1px;
@@ -665,7 +693,8 @@ h4 {
     right: 30px;
     z-index: 1;
   }
-  &:after{
+
+  &:after {
     content: "";
     border-style: solid;
     border-width: 5px 5px 0 5px;
@@ -680,15 +709,81 @@ h4 {
 }
 
 .form-sel select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 100%;
-    height: 100%;
-    padding: 0 20px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
 }
 
+.office {
+  &-header {
+    background-color: $secondary-color;
+  }
+}
+
+.auctions {
+  @include padding(0, 0, 100px, 0);
+  &-header {
+    @include padding(40px, 0, 40px, 0);
+  }
+
+  &-title {
+    // margin-top: 54px;
+    // margin-bottom: 40px;
+  }
+
+  &-control {
+    @each $control in edit, publish, copy, trash {
+      &-#{$control} {
+        background-image: url('../images/#{$control}.png');
+        background-repeat: no-repeat;
+        background-position: 15px center;
+        @include padding(10px, 15px!important, 10px, 46px!important);
+      }
+    }
+  }
+
+  &-list {
+    font-size: 14px;
+
+    thead {
+      background-color: $secondary-color;
+    }
+
+    label {
+      white-space: nowrap;
+    }
+
+    .form-check {
+      position: relative;
+
+      &-input {
+        position: absolute;
+        opacity: 0;
+      }
+    }
+  }
+
+  &-item {
+    &-menu {
+      padding: 0;
+
+      a {
+        display: block;
+        @include padding(15px, 24px, 15px, 24px);
+        font-size: 14px;
+        color: $primary-text-color;
+
+        &:hover {
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+}
 /* ---------------------------------------
     Readjusted Bootstrap Navs Styles
    --------------------------------------- */
@@ -808,12 +903,57 @@ Readjusted Bootstrap Pagination Styles
 /* --------------------------------
 Readjusted Bootstrap Nav Tabs Styles
 ---------------------------------- */
-.nav {
-  &-tabs {
-    .nav {
-      &-link {
-        &.active {
-          border-top: 4px solid $primary-color;
+.lot {
+  .nav {
+    &-tabs {
+      .nav {
+        &-link {
+          &.active {
+            border-top: 4px solid $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.office {
+  .nav {
+    &-tabs {
+      border-bottom: 0;
+
+      .nav {
+        &-link {
+          @include padding(2.1vw, 3.4vw, 2.1vw, 3.4vw);
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          color: $primary-text-color;
+
+          &.active {
+            font-weight: 600;
+            color: $primary-color;
+            border-bottom: 4px solid $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.auctions {
+  .navbar {
+    &-light {
+      .navbar {
+        &-nav {
+          .nav {
+            &-link {
+              color: $primary-text-color;
+
+              &:hover {
+                background-color: $secondary-color;
+              }
+            }
+          }
         }
       }
     }
@@ -824,4 +964,10 @@ Readjusted Bootstrap Nav Tabs Styles
    --------------------------------------- */
 .table thead th {
   vertical-align: middle;
+}
+/* ---------------------------------------
+    Readjusted Webui Popover Styles
+   --------------------------------------- */
+.webui-popover-content {
+  padding: 0 !important;
 }
