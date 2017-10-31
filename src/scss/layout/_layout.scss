@@ -971,3 +971,46 @@ Readjusted Bootstrap Nav Tabs Styles
 .webui-popover-content {
   padding: 0 !important;
 }
+
+/* CONTACTS page styles */
+.contacts {
+  &-texarea {
+    resize: none;
+  }
+  &-headers {
+    font-weight: 700;
+  }
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe-container > iframe{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* AUCTION DETAIL page styles */
+
+.auction-detail {
+  margin-bottom: 145px;
+  &-number {
+    font-size: 27px;
+    font-weight: 700;  
+  }
+  &-back-arrow{
+    padding-left: 20px;
+    background: url('../images/arrow.png') no-repeat 0 50%;
+    
+  }
+}
