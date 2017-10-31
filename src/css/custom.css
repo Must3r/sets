@@ -816,9 +816,12 @@ Readjusted Bootstrap Nav Tabs Styles
       color: #5c6bc0;
       border-bottom: 4px solid #5c6bc0; }
 
-.auctions .navbar-light .navbar-nav .nav-link {
+.auctions .navbar-light .navbar-nav .nav-link,
+.auction-detail .navbar-light .navbar-nav .nav-link {
+  font-size: 14px;
   color: #222222; }
-  .auctions .navbar-light .navbar-nav .nav-link:hover {
+  .auctions .navbar-light .navbar-nav .nav-link:hover,
+  .auction-detail .navbar-light .navbar-nav .nav-link:hover {
     background-color: #f0f1f2; }
 
 /* ---------------------------------------
@@ -832,6 +835,7 @@ Readjusted Bootstrap Nav Tabs Styles
    --------------------------------------- */
 .webui-popover-content {
   padding: 0 !important; }
+
 /* CONTACTS page styles */
 .contacts-texarea {
   resize: none; }
@@ -859,7 +863,7 @@ Readjusted Bootstrap Nav Tabs Styles
 
 /* AUCTION DETAIL page styles */
 .auction-detail {
-  margin-bottom: 145px; }
+  padding-bottom: 80px; }
   .auction-detail-number {
     font-size: 27px;
     font-weight: 700; }
