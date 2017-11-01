@@ -67,6 +67,7 @@
   color: #c6cacc; }
 
 body {
+  height: 100vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -913,14 +914,22 @@ Readjusted Bootstrap Nav Tabs Styles
   width: 100%; }
 
 /* AUCTION DETAIL page styles */
-.auction-detail {
+.auction-detail,
+.bid-detail {
   padding-bottom: 80px; }
-  .auction-detail-number {
+  .auction-detail-number,
+  .bid-detail-number {
     font-size: 27px;
     font-weight: 700; }
-  .auction-detail-back-arrow {
+  .auction-detail-back-arrow,
+  .bid-detail-back-arrow {
     padding-left: 20px;
     background: url("../images/arrow.png") no-repeat 0 50%; }
+
+.add-files-text {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400; }
 
 @media (min-width: 1260px) {
   .container {

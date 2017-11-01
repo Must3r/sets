@@ -150,6 +150,7 @@
       </div>
       <div class="container">
         <div class="tab-content" id="nav-tabContent">
+
           <div class="tab-pane auctions fade show active" id="nav-auctions" role="tabpanel" aria-labelledby="nav-auctions-tab">
             <div class="auctions-header">
               <div class="row align-items-center">
@@ -450,7 +451,159 @@
               </table>
             </form>
           </div>
-          <div class="tab-pane fade" id="nav-bids" role="tabpanel" aria-labelledby="nav-bids-tab">...</div>
+            <!-- BIDS -->
+            <div class="bids-header">
+              <div class="row align-items-center">
+                <div class="col-lg-3">
+                  <h3 class="bids-title">Мої заявки на участь</h3>
+                </div>
+                <div class="col-lg-9">
+                  <nav class="navbar navbar-expand-md sticky-top navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#auctionsControls" aria-controls="auctionsControls" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="auctionsControls">
+                      <div class="navbar-nav">
+                        <a class="nav-item nav-link bids-control-view" href="#">Деталі заявки</a>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <form>
+              <table class="bids-list table table-responsive">
+                <thead>
+                  <tr>
+                    <th scope="col" colspan="2">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" id="selectAll">
+                          <span class="custom-checkmark"></span>
+                        </label>
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="form-group">
+                        <label for="tableBidsId">Номер ставки</label>
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="form-group">
+                        <label for="tableBidsOrgName">Назва організації</label>
+                        <input type="text" class="form-control" id="tableBidsOrgName" value="">
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="form-group">
+                        <label for="tableBidsAuctionName">Назва аукціону</label>
+                        <input type="text" class="form-control" id="tableBidsAuctionName" value="">
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="form-group">
+                        <label for="tableBidsDate">Дата заяви</label>
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="form-group">
+                        <label for="tableBidsAuctionStatus">Статус аукціону</label>
+                      </div>
+                    </th>
+                    <th scope="col">
+                      <div class="form-group">
+                        <label for="tableBidsLabel">Мітка</label>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox">
+                          <span class="custom-checkmark"></span>
+                        </label>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="#" class="popover-menu"><img src="/images/icon-menu.png"></a>
+                        <nav class="webui-popover-content bids-item-menu">
+                          <a href="#">Редагувати</a>
+                          <a href="#">Опублікувати</a>
+                          <a href="#">Створити копію</a>
+                          <a href="#">Видалити</a>
+                        </nav>
+                    </td>
+                    <td>336</td>
+                    <td>ФОП Кріль В.О.</td>
+                    <td>[ТЕСТУВАННЯ] Чужинонька головистий слюзувати.</td>
+                    <td>
+                      <time>05.10.2017</time>
+                    </td>
+                    <td>Торги не відбулися</td>
+                    <td><span class="text-white bg-success p-1">Прочитано</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox">
+                          <span class="custom-checkmark"></span>
+                        </label>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="#" class="popover-menu"><img src="/images/icon-menu.png"></a>
+                        <nav class="webui-popover-content bids-item-menu">
+                          <a href="#">Редагувати</a>
+                          <a href="#">Опублікувати</a>
+                          <a href="#">Створити копію</a>
+                          <a href="#">Видалити</a>
+                        </nav>
+                    </td>
+                    <td>334</td>
+                    <td>ТОВ "Полтавакапіталсервіс"</td>
+                    <td>[ТЕСТУВАННЯ] Чужинонька головистий слюзувати.</td>
+                    <td>
+                      <time>07.09.2017</time>
+                    </td>
+                    <td>Торги не відбулися</td>
+                    <td><span class="text-white bg-success p-1">Прочитано</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox">
+                          <span class="custom-checkmark"></span>
+                        </label>
+                      </div>
+                    </td>
+                    <td>
+                      <a href="#" class="popover-menu"><img src="/images/icon-menu.png"></a>
+                        <nav class="webui-popover-content bids-item-menu">
+                          <a href="#">Редагувати</a>
+                          <a href="#">Опублікувати</a>
+                          <a href="#">Створити копію</a>
+                          <a href="#">Видалити</a>
+                        </nav>
+                    </td>
+                    <td>54</td>
+                    <td>ФОП Заєць В.О.</td>
+                    <td>[ТЕСТУВАННЯ] Чужинонька головистий слюзувати.</td>
+                    <td>
+                      <time>07.09.2017</time>
+                    </td>
+                    <td>Торги не відбулися</td>
+                    <td><span class="bg-secondary p-1">Не прочитано</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+          </div>
           <div class="tab-pane messages fade" id="nav-messages" role="tabpanel" aria-labelledby="nav-messages-tab">
             <div class="messages-header">
               <div class="row align-items-center">
@@ -543,6 +696,7 @@
       </div>
     </div>
   </main>
+
   <footer class="site-footer">
     <div class="container">
       <div class="row">

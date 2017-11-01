@@ -2,6 +2,7 @@
 @import "buttons", "forms";
 
 body {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: 'Exo 2', sans-serif;
@@ -1014,7 +1015,8 @@ Readjusted Bootstrap Nav Tabs Styles
 
 /* AUCTION DETAIL page styles */
 
-.auction-detail {
+.auction-detail,
+.bid-detail {
   padding-bottom: 80px;
   &-number {
     font-size: 27px;
@@ -1025,4 +1027,9 @@ Readjusted Bootstrap Nav Tabs Styles
     background: url('../images/arrow.png') no-repeat 0 50%;
 
   }
+}
+.add-files-text {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
 }
