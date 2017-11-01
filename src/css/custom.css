@@ -73,7 +73,8 @@ body {
   flex-direction: column;
   font-family: 'Exo 2', sans-serif;
   color: #222222;
-  font-size: 16px; }
+  font-size: 16px;
+  height: 100vh; }
 
 h1 {
   font-size: 3.5rem;
@@ -703,6 +704,16 @@ h4 {
     padding-right: 15px !important;
     padding-bottom: 10px;
     padding-left: 46px !important; }
+  .auctions-control-view,
+  .bids-control-view,
+  .messages-control-view {
+    background-image: url("../images/view.png");
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    padding-top: 10px;
+    padding-right: 15px !important;
+    padding-bottom: 10px;
+    padding-left: 46px !important; }
   .auctions-list,
   .bids-list,
   .messages-list {
@@ -742,6 +753,10 @@ h4 {
       .bids-item-menu a:hover,
       .messages-item-menu a:hover {
         background-color: #f0f1f2; }
+  .auctions-new,
+  .bids-new,
+  .messages-new {
+    font-weight: bold; }
 
 /* ---------------------------------------
     Readjusted Bootstrap Navs Styles
@@ -845,11 +860,19 @@ Readjusted Bootstrap Nav Tabs Styles
       border-bottom: 4px solid #5c6bc0; }
 
 .auctions .navbar-light .navbar-nav .nav-link,
-.auction-detail .navbar-light .navbar-nav .nav-link {
+.auction-detail .navbar-light .navbar-nav .nav-link,
+.bids .navbar-light .navbar-nav .nav-link,
+.bid-detail .navbar-light .navbar-nav .nav-link,
+.messages .navbar-light .navbar-nav .nav-link,
+.message-detail .navbar-light .navbar-nav .nav-link {
   font-size: 14px;
   color: #222222; }
   .auctions .navbar-light .navbar-nav .nav-link:hover,
-  .auction-detail .navbar-light .navbar-nav .nav-link:hover {
+  .auction-detail .navbar-light .navbar-nav .nav-link:hover,
+  .bids .navbar-light .navbar-nav .nav-link:hover,
+  .bid-detail .navbar-light .navbar-nav .nav-link:hover,
+  .messages .navbar-light .navbar-nav .nav-link:hover,
+  .message-detail .navbar-light .navbar-nav .nav-link:hover {
     background-color: #f0f1f2; }
 
 /* ---------------------------------------

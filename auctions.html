@@ -138,7 +138,7 @@
             <div class="col-lg-8 col-md-6">
               <nav class="nav nav-tabs" id="officeTab" role="tablist">
                 <a class="nav-item nav-link active" id="nav-auctions-tab" data-toggle="tab" href="#nav-auctions" role="tab" aria-controls="nav-auctions" aria-selected="true">Аукціони</a>
-                <a class="nav-item nav-link" id="nav-apply-tab" data-toggle="tab" href="#nav-apply" role="tab" aria-controls="nav-apply" aria-selected="false">Заявки на участь</a>
+                <a class="nav-item nav-link" id="nav-bids-tab" data-toggle="tab" href="#nav-bids" role="tab" aria-controls="nav-bids" aria-selected="false">Заявки на участь</a>
                 <a class="nav-item nav-link" id="nav-messages-tab" data-toggle="tab" href="#nav-messages" role="tab" aria-controls="nav-messages" aria-selected="false">Повідомлення (2)</a>
               </nav>
             </div>
@@ -450,8 +450,95 @@
               </table>
             </form>
           </div>
-          <div class="tab-pane fade" id="nav-apply" role="tabpanel" aria-labelledby="nav-apply-tab">...</div>
-          <div class="tab-pane fade" id="nav-messages" role="tabpanel" aria-labelledby="nav-messages-tab">...</div>
+          <div class="tab-pane fade" id="nav-bids" role="tabpanel" aria-labelledby="nav-bids-tab">...</div>
+          <div class="tab-pane messages fade" id="nav-messages" role="tabpanel" aria-labelledby="nav-messages-tab">
+            <div class="messages-header">
+              <div class="row align-items-center">
+                <div class="col-lg-3">
+                  <h3 class="messages-title">Мої повідомлення</h3>
+                </div>
+                <div class="col-lg-9">
+                  <nav class="navbar navbar-expand-md sticky-top navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#messagesControls" aria-controls="messagesControls" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="messagesControls">
+                      <div class="navbar-nav">
+                        <a class="nav-item nav-link messages-control-view" href="#">Переглянути</a>
+                        <a class="nav-item nav-link messages-control-trash" href="#">Видалити</a>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <form>
+              <table class="messages-list table table-responsive">
+                <thead>
+                  <tr>
+                    <th scope="col" colspan="2">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" id="selectAll">
+                          <span class="custom-checkmark"></span>
+                        </label>
+                      </div>
+                    </th>
+                    <th scope="col">
+                        <p>Повідомлення</p>
+                    </th>
+                    <th scope="col">
+                        <p>Дата</p>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="messages-new">
+                    <td width="30">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox">
+                          <span class="custom-checkmark"></span>
+                        </label>
+                      </div>
+                    </td>
+                    <td width="30">
+                      <a href="#" class="popover-menu"><img src="/images/icon-menu.png"></a>
+                        <nav class="webui-popover-content messages-item-menu">
+                          <a href="#">Переглянути</a>
+                          <a href="#">Видалити</a>
+                        </nav>
+                    </td>
+                    <td>Аукціон успішно створено: <a class="link-primary" href="#">Переглянути створений аукціон</a></td>
+                    <td width="20%">
+                      <time>05.10.2017</time>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="30">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox">
+                          <span class="custom-checkmark"></span>
+                        </label>
+                      </div>
+                    </td>
+                    <td width="30">
+                      <a href="#" class="popover-menu"><img src="/images/icon-menu.png"></a>
+                        <nav class="webui-popover-content messages-item-menu">
+                          <a href="#">Переглянути</a>
+                          <a href="#">Видалити</a>
+                        </nav>
+                    </td>
+                    <td>Аукціон успішно створено: <a class="link-primary" href="#">Переглянути створений аукціон</a></td>
+                    <td width="10%">
+                      <time>05.10.2017</time>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
         </div>
       </div>
     </div>

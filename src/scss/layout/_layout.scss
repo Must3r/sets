@@ -7,6 +7,7 @@ body {
   font-family: 'Exo 2', sans-serif;
   color: $primary-text-color;
   font-size: 16px;
+  height: 100vh;
 }
 @for $i from 1 through 3 {
   h#{$i} {
@@ -738,7 +739,7 @@ h4 {
   }
 
   &-control {
-    @each $control in edit, publish, copy, trash {
+    @each $control in edit, publish, copy, trash, view {
       &-#{$control} {
         background-image: url('../images/#{$control}.png');
         background-repeat: no-repeat;
@@ -784,6 +785,9 @@ h4 {
         }
       }
     }
+  }
+  &-new {
+    font-weight: bold;
   }
 }
 /* ---------------------------------------
@@ -943,7 +947,11 @@ Readjusted Bootstrap Nav Tabs Styles
 }
 
 .auctions,
-.auction-detail {
+.auction-detail,
+.bids,
+.bid-detail,
+.messages,
+.message-detail {
   .navbar {
     &-light {
       .navbar {
